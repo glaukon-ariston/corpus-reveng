@@ -1,0 +1,12 @@
+<?xml version="1.0" ?>
+<PROJECTFILE>
+  <ELEMENT ENAME="Test_Element" EXPOX="0" EYPOS="0" EZPOS="0" ESIRINA="1000" EVISINA="800" EDUBINA="600">
+    <DASKE>
+      <AD DNAME="Test_Panel" VISINA="800" DUBINA="600" DEBLJINA="18">
+        <RUPE>
+          <GRUPA DATA="RASNAM="test_raster",RASXPO="100",RASYPO="200",RASPLA="1",RASFI="5",RASDUB="10",RASMODE="1",RASBRR="5",RASSVK="32",RASANG="0""/>
+        </RUPE>
+      </AD>
+    </DASKE>
+  </ELEMENT>
+</PROJECTFILE>
