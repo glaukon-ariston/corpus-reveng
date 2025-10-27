@@ -37,6 +37,11 @@ The project will be executed in the following phases:
 1.  **Tool Selection:** Based on the file format analysis, select the appropriate tools for parsing. Python, with libraries such as `struct` for binary data, is a strong candidate.
 2.  **Initial Parser:** Develop a simple script to parse a single, relatively simple `.S3D` file.
 3.  **Goal:** The initial goal for the parser will be to successfully extract basic information, such as the dimensions and names of the panels within the project.
+4.  **Refactoring:** The parser was refactored to return a structured Python object (`Project`) instead of printing to the console. This makes the data more usable for future processing.
+
+### Phase 2a: S3D Writer Development
+
+A writer module (`writer.py`) has been developed to serialize the `Project` object back into the S3D XML format. This allows for the creation of new S3D files from scratch or the modification of existing ones.
 
 ### Phase 3: OpenSCAD Integration
 
@@ -101,4 +106,8 @@ For groups of holes (`RASMODE=0`), the following additional keys are used:
 
 ## Next Steps
 
-The next step is to create a more comprehensive parser that can handle all the different types of drilling operations, including single holes, rasters of holes, and saw cuts. The parser should be able to extract all the relevant parameters for each type of operation and store them in a structured format.
+The next step is to begin the OpenSCAD integration. This will involve:
+1.  Investigating methods for exporting data from OpenSCAD, likely using a custom script.
+2.  Defining an intermediate data format (e.g., JSON) to represent the model's geometry and drilling information.
+3.  Creating a script to convert the OpenSCAD output to this intermediate format.
+4.  Using the `writer.py` to convert the intermediate format to the S3D format.
