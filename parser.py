@@ -1,7 +1,31 @@
 import xml.etree.ElementTree as ET
 import re
+from dataclasses import dataclass, field
+from typing import List, Dict
+import pprint
 
-def parse_data_string(data_string):
+@dataclass
+class DrillingGroup:
+    data: Dict[str, str]
+
+@dataclass
+class Panel:
+    name: str
+    dimensions: Dict[str, str]
+    drilling_groups: List[DrillingGroup] = field(default_factory=list)
+
+@dataclass
+class Element:
+    name: str
+    position: Dict[str, str]
+    dimensions: Dict[str, str]
+    panels: List[Panel] = field(default_factory=list)
+
+@dataclass
+class Project:
+    elements: List[Element] = field(default_factory=list)
+
+def _parse_data_string(data_string: str) -> Dict[str, str]:
     """
     Parses the DATA attribute string into a dictionary.
     """
@@ -15,39 +39,58 @@ def parse_data_string(data_string):
     matches = pattern.findall(data_string)
     for key, value in matches:
         # Strip quotes from the value
-        data[key] = value.strip('\"')
+        data[key] = value.strip('"')
     return data
 
-def parse_s3d(file_path):
+def parse_s3d(file_path: str) -> Project:
     """
-    Parses an S3D file and extracts information about furniture elements,
-    panels, and drilling.
+    Parses an S3D file and returns a Project object.
     """
     tree = ET.parse(file_path)
     root = tree.getroot()
+    project = Project()
 
-    for element in root.findall('ELEMENT'):
-        print(f"Element: {element.get('ENAME')}")
-        print(f"  Position: (X={element.get('EXPOX')}, Y={element.get('EYPOS')}, Z={element.get('EZPOS')})")
-        print(f"  Dimensions: (Width={element.get('ESIRINA')}, Height={element.get('EVISINA')}, Depth={element.get('EDUBINA')})")
+    for element_node in root.findall('ELEMENT'):
+        element = Element(
+            name=element_node.get('ENAME'),
+            position={
+                'X': element_node.get('EXPOX'),
+                'Y': element_node.get('EYPOS'),
+                'Z': element_node.get('EZPOS'),
+            },
+            dimensions={
+                'Width': element_node.get('ESIRINA'),
+                'Height': element_node.get('EVISINA'),
+                'Depth': element_node.get('EDUBINA'),
+            }
+        )
 
-        daske = element.find('DASKE')
-        if daske is not None:
-            print("  Panels:")
-            for ad in daske.findall('AD'):
-                print(f"    - {ad.get('DNAME')}:")
-                print(f"        Dimensions: (Width={ad.get('VISINA')}, Height={ad.get('DUBINA')}, Thickness={ad.get('DEBLJINA')})")
+        daske_node = element_node.find('DASKE')
+        if daske_node is not None:
+            for ad_node in daske_node.findall('AD'):
+                panel = Panel(
+                    name=ad_node.get('DNAME'),
+                    dimensions={
+                        'Width': ad_node.get('VISINA'),
+                        'Height': ad_node.get('DUBINA'),
+                        'Thickness': ad_node.get('DEBLJINA'),
+                    }
+                )
 
-                rupe = ad.find('RUPE')
-                if rupe is not None:
-                    print("        Drilling:")
-                    for grupa in rupe.findall('GRUPA'):
-                        data_string = grupa.get('DATA')
+                rupe_node = ad_node.find('RUPE')
+                if rupe_node is not None:
+                    for grupa_node in rupe_node.findall('GRUPA'):
+                        data_string = grupa_node.get('DATA')
                         if data_string:
-                            drilling_data = parse_data_string(data_string)
-                            print(f"          - Group: {drilling_data.get('RASNAM', 'N/A')}")
-                            for key, value in drilling_data.items():
-                                print(f"              {key}: {value}")
+                            drilling_data = _parse_data_string(data_string)
+                            drilling_group = DrillingGroup(data=drilling_data)
+                            panel.drilling_groups.append(drilling_group)
+                
+                element.panels.append(panel)
+        project.elements.append(element)
+
+    return project
 
 if __name__ == '__main__':
-    parse_s3d('export/sobasav/Kuhinja_01.S3D')
+    project_data = parse_s3d('export/sobasav/Kuhinja_01.S3D')
+    pprint.pprint(project_data)
