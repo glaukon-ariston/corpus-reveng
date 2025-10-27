@@ -1,0 +1,719 @@
+Ver,10
+0,S,3980,5197,1500,1000,1894,1894,1844,1,50, ZP_b48, ZP_b48, Leptiri_z, mt1_001, 
+"0","C","CAMTYPE=1","CAMEX=0","CAMEY=1.64999997615814","CAMEZ=2.5","CAMCX=0","CAMCY=0","CAMCZ=0","CAMUX=0","CAMUY=0","CAMUZ=0","CAMLIN=0","CAMA1X=0.0900014191865921","CAMA1Z=4.71000671386719","CAMAX=0.0900014191865921","CAMAY=0.690000534057617","CAMAZ=6.70998573303223","CAMAA=-34.6666641235352","CAMAAX=30.1498889923096","CAMDIS=5","CAMKUTX=197.433380126953","CAMKUTY=-2.5150032043457","CAMOY=1.64999997615814",
+0,L,0,50,25,1,1,80,100, 
+"0","F","PATHINT=10","PATHSPU=50","PATHMAXS=10","PATHSEG=300","PTOCKA=0","PTSTYLE=1","PTANMODE=1","PTSEGCOUNT=300","PTX=1","PTZ=1","PTDEPTH=0","PTCLEN=0","PTS=0","PTPR0=1.55999994277954","PTPR1=1","PTPR2=0","PTNE0=0.439999997615814","PTNE1=1","PTNE2=0","PTOCKA=1","PTSTYLE=1","PTANMODE=1","PTSEGCOUNT=300","PTX=1","PTZ=0","PTDEPTH=1","PTCLEN=0","PTS=0","PTPR0=0","PTPR1=1","PTPR2=0.439999997615814","PTNE0=0","PTNE1=1","PTNE2=1.55999994277954","PTOCKA=2","PTSTYLE=1","PTANMODE=1","PTSEGCOUNT=300","PTX=1","PTZ=1","PTDEPTH=2","PTCLEN=0","PTS=0","PTPR0=0.439999997615814","PTPR1=1","PTPR2=2","PTNE0=1.55999994277954","PTNE1=1","PTNE2=2","PTOCKA=3","PTSTYLE=1","PTANMODE=1","PTSEGCOUNT=300","PTX=1","PTZ=2","PTDEPTH=1","PTCLEN=0","PTS=0","PTPR0=2","PTPR1=1","PTPR2=1.55999994277954","PTNE0=2","PTNE1=1","PTNE2=0.439999997615814",
+"0","I","","","","","","","","","","","","","","","","","","","","",,
+"0","E","Ormar2","","90","550","0","3350","2000","550","18","700","2","true",""," 0","0","0","708.163879394531","0","0","0","true","false","","","","","","","A33921","0","0","","","false","0","0","0","0","0","0","1","1","1","false","false","false","false","","","","","","","","","","","", 
+"1","VAR","RVARS=9",visina_poda=100,Polica_uza=0,ledja_Z_pomak=10,ledja_LD_falc=0,ledja_pod_falc=0,ledja_gore_falc=0,strop_nap=20,visina_dolje=720,visina_gore=500,
+"1","EFC","RVTOKLK=""""""Materijal"""","""""""","""""""","""""""",""""Prema tipu ploha u elementu"""""",""""""Korpus"""",""""kn"""",""""PT_BodySqr"""",""""45.50"""",""""Površina poda, bokova i ojaèanja"""""",""""""Fronte"""",""""kn"""",""""PT_FaceSqr"""",""""60.00"""",""""Površina fronti"""""",""""""Police"""",""""kn"""",""""PT_ShelSqr"""",""""45.50"""",""""Površina polica"""""",""""""Cokl"""",""""kn"""",""""PT_ToekSqr"""",""""45.50"""",""""Površina cokla"""""",""""""Radna_ploca"""",""""kn"""",""""PT_WorkTopSqr"""",""""130.00"""",""""Površina radne ploce"""""",""""""Ledja"""",""""kn"""",""""PT_BackSqr"""",""""30.00"""",""""Površina ledja"""""",""""""Okviri"""",""""kn"""",""""CB_BarLen"""",""""70.00"""",""""Dužina okvira na frontama s ukladama"""""",""""""Custom"""",""""kn"""",""""PT_CustSqr"""",""""120.00"""",""""Površina ploha tipa """"""""Custom"""""""""""""",""""""Usluge"""","""""""","""""""","""""""","""""""""",""""""Obrada_okvira"""",""""kn"""",""""CB_BarQty"""",""""20.00"""",""""Obrada okvira po komadu"""""",""""""Lakiranje_fronti"""",""""kn"""",""""PT_FaceSqr*_Lakiranje"""",""""500.00"""",""""Površina fronti"""""",""""""Bušenje_rupa"""",""""kn"""",""""CB_HoleQty"""",""""2.00"""",""""Broj rupa"""""",""""""Ugradnja_ladica"""",""""kn"""",""""CB_DrawQty"""",""""20.00"""",""""Broj ladica"""""",""""""Montaža"""",""""kn"""",""""_Montaza"""",""""50.00"""",""""Cijena jednog radnog sata""""""","RVARS=B=VISINA,L=ŠIRINA,D=DEBLJINA,_Montaza=1,_Lakiranje=1"
+"1","EEX","EATCAL=2",
+"1","D","Leða","8","0","18","118","-540","1864","664","20","1","0","0","0","0","8"," ","false","true","16777215","false","0","lijeva stranica.debljina-ledja_ld_falc","visina_poda+pod.debljina-ledja_pod_falc","0-dubina+ledja_z_pomak","visina-visina_poda-pod.debljina-strop.debljina+ledja_gore_falc","širina-lijeva stranica.debljina-desna stranica.debljina+2*ledja_ld_falc","","0","0","","mt1_008","False","False","","","","","","False","",""," "," "," "," "," "," "," "," "," "," ", 
+"2","A","1","16777215","10","93","Obukva7396","Drvene tiple - razne", 
+
+"1","D","Lijeva Stranica","8","0","0","0","0","1982","550","18","0","0","0","0","0","0"," ","false","true","16777215","false","0","0","0","","visina-strop.debljina","dubina","","0","0","","mt1_008","False","False","","","","","","False","",""," "," "," "," "," "," "," "," "," "," ", 
+"2","A","0","16777215","4","0","0","0","false","false","true","false","mt1_001","O020209361","melamin","0", 
+"2","A","0","16777215","4","0","0","0","false","true","false","false","mt1_001","O020209361","melamin","0", 
+"2","A","0","16777215","4","0","0","0","false","false","false","true","mt1_001","O020209361","melamin","0", 
+"2","A","0","16777215","4","0","0","0","true","false","false","false","mt1_001","O020209361","melamin","0", 
+
+"1","D","Desna Stranica","8","0","682","0","0","1982","550","18","0","0","0","0","0","0"," ","false","true","16777215","false","0","širina-desna stranica.de","0","0","visina-strop.debljina","dubina","","0","0","","mt1_008","False","False","","","","","","False","",""," "," "," "," "," "," "," "," "," "," ", 
+"2","A","0","16777215","4","0","0","0","false","false","true","false","mt1_001","O020209361","melamin","0", 
+"2","A","0","16777215","4","0","0","0","false","true","false","false","mt1_001","O020209361","melamin","0", 
+"2","A","0","16777215","4","0","0","0","false","false","false","true","mt1_001","O020209361","melamin","0", 
+"2","A","0","16777215","4","0","0","0","true","false","false","false","mt1_001","O020209361","melamin","0", 
+
+"1","D","Pod","8","0","18","100","0","664","550","18","2","0","0","0","0","0"," ","false","true","16777215","false","0","lijeva stranica.debljina","visina_poda","0","širina-lijeva stranica.debljina-desna stranica.debljina","dubina","","0","0","","mt1_008","False","False","","","","","","False","",""," "," "," "," "," "," "," "," "," "," ", 
+"2","A","0","16777215","4","0","0","0","false","false","false","true","mt1_001","O020209361","melamin","0", 
+"2","A","0","16777215","4","0","0","0","false","false","true","false","mt1_001","O020209361","melamin","0", 
+
+"1","D","Strop","8","0","0","1982","20","700","570","18","2","0","0","0","0","0"," ","false","true","16777215","false","0","0","Visina-Strop.De","strop_nap","širina","dubina+strop_nap","","0","0","","mt1_008","False","False","","","","","","False","",""," "," "," "," "," "," "," "," "," "," ", 
+"2","A","0","16777215","4","0","0","0","true","false","false","false","mt1_001","O020209361","melamin","0", 
+"2","A","0","16777215","4","0","0","0","false","true","false","false","mt1_001","O020209361","melamin","0", 
+"2","A","0","16777215","4","0","0","0","false","false","false","true","mt1_001","O020209361","melamin","0", 
+"2","A","0","16777215","4","0","0","0","false","false","true","false","mt1_001","O020209361","melamin","0", 
+"2","A","1","16777215","25","93","Obukva7396","Drvene tiple - razne", 
+"2","A","1","16777215","1","136","OSPAX-6688","Iver vij.upuš.gl.polu navoj bij.pocin.", 
+
+"1","D","Ukrasna letvica","8","0","18","0","-23","100","664","18","1","0","0","0","0","3"," ","false","true","16777215","false","0","lijeva stranica.debljina","0","0-ukrasna letvica.debljina-5","Pod.y","širina-lijeva stranica.debljina-desna stranica.debljina","","0","0","","mt1_008","False","True","","","","","","False","",""," "," "," "," "," "," "," "," "," "," ", 
+
+"1","D","Polica1","9","0","18","702","-20","664","500","18","2","0","0","0","0","2"," ","false","true","16777215","false","0","Lijeva Stranica.x+Lijeva Stranica.De","visina_dolje-polica1.debljina","","Desna Stranica.x-Lijeva Stranica.De-Lijeva Stranica.x-Polica_uza","0-Leða.z-Leða.De-20","","0","0","","mt1_009","False","False","","","","","","False","",""," "," "," "," "," "," "," "," "," "," ", 
+"2","A","0","16777215","4","0","0","0","false","false","true","false","mt1_008","O020209361","melamin","0", 
+
+"1","D","Polica2","9","0","18","968","-20","664","500","18","2","0","0","0","0","2"," ","false","true","16777215","false","0","Lijeva Stranica.x+Lijeva Stranica.De","polica1.y+1*(polica4.y-polica1.y)/3","","Desna Stranica.x-Lijeva Stranica.De-Lijeva Stranica.x-Polica_uza","0-Leða.z-Leða.De-20","","0","0","","mt1_009","False","False","","","","","","False","",""," "," "," "," "," "," "," "," "," "," ", 
+"2","A","0","16777215","4","0","0","0","false","false","true","false","mt1_008","O020209361","melamin","0", 
+
+"1","D","Polica4","9","0","18","1500","-20","664","500","18","2","0","0","0","0","2"," ","false","true","16777215","false","0","Lijeva Stranica.x+Lijeva Stranica.De","visina-visina_gore","","Desna Stranica.x-Lijeva Stranica.De-Lijeva Stranica.x-Polica_uza","0-Leða.z-Leða.De-20","","0","0","","mt1_009","False","False","","","","","","False","",""," "," "," "," "," "," "," "," "," "," ", 
+"2","A","0","16777215","4","0","0","0","false","false","true","false","mt1_008","O020209361","melamin","0", 
+
+"1","D","Polica3","9","0","18","1234","-20","664","500","18","2","0","0","0","0","2"," ","false","true","16777215","false","0","Lijeva Stranica.x+Lijeva Stranica.De","polica1.y+2*(polica4.y-polica1.y)/3","","Desna Stranica.x-Lijeva Stranica.De-Lijeva Stranica.x-Polica_uza","0-Leða.z-Leða.De-20","","0","0","","mt1_009","False","False","","","","","","False","",""," "," "," "," "," "," "," "," "," "," ", 
+"2","A","0","16777215","4","0","0","0","false","false","true","false","mt1_008","O020209361","melamin","0", 
+
+"1","D","Lijeva Vrata204","8","0","3","1503","0","476","694","18","1","0","0","0","0","1"," ","false","true","16777215","false","2","Lijeva Stranica.X+3","Polica4.y+3","","Strop.y+Strop.De-Polica4.y-6-Strop.De","Desna Stranica.x+Desna Stranica.De-Lijeva Stranica.x-6","","0","0","","mt1_008","False","False","","","","","","False","",""," "," "," "," "," "," "," "," "," "," ", 
+"2","A","0","16777215","4","0","0","0","false","true","false","false","mt1_001","O020209361","melamin","0", 
+"2","A","0","16777215","4","0","0","0","false","false","false","true","mt1_001","O020209361","melamin","0", 
+"2","A","0","16777215","4","0","0","0","true","false","false","false","mt1_001","O020209361","melamin","0", 
+"2","A","0","16777215","4","0","0","0","false","false","true","false","mt1_001","O020209361","melamin","0", 
+
+"2","R","Ruèkica","1611","90","50","173","0","130","100","0","1","8","0","0","0","7"," ","false","true","8421504","false","0","50","Lijeva Vrata204.V-130/2","","","","","0","0","","ametal","False","False","","","","","","True","",""," "," "," "," "," "," "," "," "," "," ", 
+
+"1","D","Lijeva Vrata206","8","0","3","103","0","614","694","18","1","0","0","0","0","1"," ","false","true","16777215","false","2","Lijeva Stranica.X+3","Pod.y+3","","Polica1.y+Polica1.De-Pod.y-6","Desna Stranica.x+Desna Stranica.De-Lijeva Stranica.x-6","","0","0","","mt1_008","False","False","","","","","","False","",""," "," "," "," "," "," "," "," "," "," ", 
+"2","A","0","16777215","4","0","0","0","false","true","false","false","mt1_001","O020209361","melamin","0", 
+"2","A","0","16777215","4","0","0","0","false","false","false","true","mt1_001","O020209361","melamin","0", 
+"2","A","0","16777215","4","0","0","0","true","false","false","false","mt1_001","O020209361","melamin","0", 
+"2","A","0","16777215","4","0","0","0","false","false","true","false","mt1_001","O020209361","melamin","0", 
+
+"2","R","Ruèkica","1611","90","50","242","0","130","100","0","1","8","0","0","0","7"," ","false","true","8421504","false","0","50","Lijeva Vrata206.V-130/2","","","","","0","0","","ametal","False","False","","","","","","True","",""," "," "," "," "," "," "," "," "," "," ", 
+
+"0","E","Ormar2","","0","2200","0","550","2000","550","18","700","2","true",""," 0","0","0","708.163879394531","0","0","0","true","false","","","","","","","A33921","0","0","","","false","0","0","0","0","0","0","1","1","1","false","false","false","false","","","","","","","","","","","", 
+"1","VAR","RVARS=9",visina_poda=100,Polica_uza=0,ledja_Z_pomak=10,ledja_LD_falc=0,ledja_pod_falc=0,ledja_gore_falc=0,strop_nap=20,visina_dolje=720,visina_gore=500,
+"1","EFC","RVTOKLK=""""""Materijal"""","""""""","""""""","""""""",""""Prema tipu ploha u elementu"""""",""""""Korpus"""",""""kn"""",""""PT_BodySqr"""",""""45.50"""",""""Površina poda, bokova i ojaèanja"""""",""""""Fronte"""",""""kn"""",""""PT_FaceSqr"""",""""60.00"""",""""Površina fronti"""""",""""""Police"""",""""kn"""",""""PT_ShelSqr"""",""""45.50"""",""""Površina polica"""""",""""""Cokl"""",""""kn"""",""""PT_ToekSqr"""",""""45.50"""",""""Površina cokla"""""",""""""Radna_ploca"""",""""kn"""",""""PT_WorkTopSqr"""",""""130.00"""",""""Površina radne ploce"""""",""""""Ledja"""",""""kn"""",""""PT_BackSqr"""",""""30.00"""",""""Površina ledja"""""",""""""Okviri"""",""""kn"""",""""CB_BarLen"""",""""70.00"""",""""Dužina okvira na frontama s ukladama"""""",""""""Custom"""",""""kn"""",""""PT_CustSqr"""",""""120.00"""",""""Površina ploha tipa """"""""Custom"""""""""""""",""""""Usluge"""","""""""","""""""","""""""","""""""""",""""""Obrada_okvira"""",""""kn"""",""""CB_BarQty"""",""""20.00"""",""""Obrada okvira po komadu"""""",""""""Lakiranje_fronti"""",""""kn"""",""""PT_FaceSqr*_Lakiranje"""",""""500.00"""",""""Površina fronti"""""",""""""Bušenje_rupa"""",""""kn"""",""""CB_HoleQty"""",""""2.00"""",""""Broj rupa"""""",""""""Ugradnja_ladica"""",""""kn"""",""""CB_DrawQty"""",""""20.00"""",""""Broj ladica"""""",""""""Montaža"""",""""kn"""",""""_Montaza"""",""""50.00"""",""""Cijena jednog radnog sata""""""","RVARS=B=VISINA,L=ŠIRINA,D=DEBLJINA,_Montaza=1,_Lakiranje=1"
+"1","EEX","EATCAL=2",
+"1","D","Leða","8","0","18","118","-540","1864","664","20","1","0","0","0","0","8"," ","false","true","16777215","false","0","lijeva stranica.debljina-ledja_ld_falc","visina_poda+pod.debljina-ledja_pod_falc","0-dubina+ledja_z_pomak","visina-visina_poda-pod.debljina-strop.debljina+ledja_gore_falc","širina-lijeva stranica.debljina-desna stranica.debljina+2*ledja_ld_falc","","0","0","","mt1_008","False","False","","","","","","False","",""," "," "," "," "," "," "," "," "," "," ", 
+"2","A","1","16777215","10","93","Obukva7396","Drvene tiple - razne", 
+
+"1","D","Lijeva Stranica","8","0","0","0","0","1982","550","18","0","0","0","0","0","0"," ","false","true","16777215","false","0","0","0","","visina-strop.debljina","dubina","","0","0","","mt1_008","False","False","","","","","","False","",""," "," "," "," "," "," "," "," "," "," ", 
+"2","A","0","16777215","4","0","0","0","false","false","true","false","mt1_001","O020209361","melamin","0", 
+"2","A","0","16777215","4","0","0","0","false","true","false","false","mt1_001","O020209361","melamin","0", 
+"2","A","0","16777215","4","0","0","0","false","false","false","true","mt1_001","O020209361","melamin","0", 
+"2","A","0","16777215","4","0","0","0","true","false","false","false","mt1_001","O020209361","melamin","0", 
+
+"1","D","Desna Stranica","8","0","682","0","0","1982","550","18","0","0","0","0","0","0"," ","false","true","16777215","false","0","širina-desna stranica.de","0","0","visina-strop.debljina","dubina","","0","0","","mt1_008","False","False","","","","","","False","",""," "," "," "," "," "," "," "," "," "," ", 
+"2","A","0","16777215","4","0","0","0","false","false","true","false","mt1_001","O020209361","melamin","0", 
+"2","A","0","16777215","4","0","0","0","false","true","false","false","mt1_001","O020209361","melamin","0", 
+"2","A","0","16777215","4","0","0","0","false","false","false","true","mt1_001","O020209361","melamin","0", 
+"2","A","0","16777215","4","0","0","0","true","false","false","false","mt1_001","O020209361","melamin","0", 
+
+"1","D","Pod","8","0","18","100","0","664","550","18","2","0","0","0","0","0"," ","false","true","16777215","false","0","lijeva stranica.debljina","visina_poda","0","širina-lijeva stranica.debljina-desna stranica.debljina","dubina","","0","0","","mt1_008","False","False","","","","","","False","",""," "," "," "," "," "," "," "," "," "," ", 
+"2","A","0","16777215","4","0","0","0","false","false","false","true","mt1_001","O020209361","melamin","0", 
+"2","A","0","16777215","4","0","0","0","false","false","true","false","mt1_001","O020209361","melamin","0", 
+
+"1","D","Strop","8","0","0","1982","20","700","570","18","2","0","0","0","0","0"," ","false","true","16777215","false","0","0","Visina-Strop.De","strop_nap","širina","dubina+strop_nap","","0","0","","mt1_008","False","False","","","","","","False","",""," "," "," "," "," "," "," "," "," "," ", 
+"2","A","0","16777215","4","0","0","0","true","false","false","false","mt1_001","O020209361","melamin","0", 
+"2","A","0","16777215","4","0","0","0","false","true","false","false","mt1_001","O020209361","melamin","0", 
+"2","A","0","16777215","4","0","0","0","false","false","false","true","mt1_001","O020209361","melamin","0", 
+"2","A","0","16777215","4","0","0","0","false","false","true","false","mt1_001","O020209361","melamin","0", 
+"2","A","1","16777215","25","93","Obukva7396","Drvene tiple - razne", 
+"2","A","1","16777215","1","136","OSPAX-6688","Iver vij.upuš.gl.polu navoj bij.pocin.", 
+
+"1","D","Ukrasna letvica","8","0","18","0","-23","100","664","18","1","0","0","0","0","3"," ","false","true","16777215","false","0","lijeva stranica.debljina","0","0-ukrasna letvica.debljina-5","Pod.y","širina-lijeva stranica.debljina-desna stranica.debljina","","0","0","","mt1_008","False","True","","","","","","False","",""," "," "," "," "," "," "," "," "," "," ", 
+
+"1","D","Polica1","9","0","18","702","-20","664","500","18","2","0","0","0","0","2"," ","false","true","16777215","false","0","Lijeva Stranica.x+Lijeva Stranica.De","visina_dolje-polica1.debljina","","Desna Stranica.x-Lijeva Stranica.De-Lijeva Stranica.x-Polica_uza","0-Leða.z-Leða.De-20","","0","0","","mt1_009","False","False","","","","","","False","",""," "," "," "," "," "," "," "," "," "," ", 
+"2","A","0","16777215","4","0","0","0","false","false","true","false","mt1_008","O020209361","melamin","0", 
+
+"1","D","Polica2","9","0","18","968","-20","664","500","18","2","0","0","0","0","2"," ","false","true","16777215","false","0","Lijeva Stranica.x+Lijeva Stranica.De","polica1.y+1*(polica4.y-polica1.y)/3","","Desna Stranica.x-Lijeva Stranica.De-Lijeva Stranica.x-Polica_uza","0-Leða.z-Leða.De-20","","0","0","","mt1_009","False","False","","","","","","False","",""," "," "," "," "," "," "," "," "," "," ", 
+"2","A","0","16777215","4","0","0","0","false","false","true","false","mt1_008","O020209361","melamin","0", 
+
+"1","D","Polica4","9","0","18","1500","-20","664","500","18","2","0","0","0","0","2"," ","false","true","16777215","false","0","Lijeva Stranica.x+Lijeva Stranica.De","visina-visina_gore","","Desna Stranica.x-Lijeva Stranica.De-Lijeva Stranica.x-Polica_uza","0-Leða.z-Leða.De-20","","0","0","","mt1_009","False","False","","","","","","False","",""," "," "," "," "," "," "," "," "," "," ", 
+"2","A","0","16777215","4","0","0","0","false","false","true","false","mt1_008","O020209361","melamin","0", 
+
+"1","D","Polica3","9","0","18","1234","-20","664","500","18","2","0","0","0","0","2"," ","false","true","16777215","false","0","Lijeva Stranica.x+Lijeva Stranica.De","polica1.y+2*(polica4.y-polica1.y)/3","","Desna Stranica.x-Lijeva Stranica.De-Lijeva Stranica.x-Polica_uza","0-Leða.z-Leða.De-20","","0","0","","mt1_009","False","False","","","","","","False","",""," "," "," "," "," "," "," "," "," "," ", 
+"2","A","0","16777215","4","0","0","0","false","false","true","false","mt1_008","O020209361","melamin","0", 
+
+"1","D","Lijeva Vrata204","8","0","3","1503","0","476","694","18","1","0","0","0","0","1"," ","false","true","16777215","false","1","Lijeva Stranica.X+3","Polica4.y+3","","Strop.y+Strop.De-Polica4.y-6-Strop.De","Desna Stranica.x+Desna Stranica.De-Lijeva Stranica.x-6","","0","0","","mt1_008","False","False","","","","","","False","",""," "," "," "," "," "," "," "," "," "," ", 
+"2","A","0","16777215","4","0","0","0","false","true","false","false","mt1_001","O020209361","melamin","0", 
+"2","A","0","16777215","4","0","0","0","false","false","false","true","mt1_001","O020209361","melamin","0", 
+"2","A","0","16777215","4","0","0","0","true","false","false","false","mt1_001","O020209361","melamin","0", 
+"2","A","0","16777215","4","0","0","0","false","false","true","false","mt1_001","O020209361","melamin","0", 
+
+"2","R","Ruèkica","1611","90","664","173","0","130","100","0","1","8","0","0","0","7"," ","false","true","8421504","false","0","Lijeva Vrata204.S-30","Lijeva Vrata204.V-130/2","","","","","0","0","","ametal","False","False","","","","","","True","",""," "," "," "," "," "," "," "," "," "," ", 
+
+"1","D","Lijeva Vrata206","8","0","3","103","0","614","694","18","1","0","0","0","0","1"," ","false","true","16777215","false","1","Lijeva Stranica.X+3","Pod.y+3","","Polica1.y+Polica1.De-Pod.y-6","Desna Stranica.x+Desna Stranica.De-Lijeva Stranica.x-6","","0","0","","mt1_008","False","False","","","","","","False","",""," "," "," "," "," "," "," "," "," "," ", 
+"2","A","0","16777215","4","0","0","0","false","true","false","false","mt1_001","O020209361","melamin","0", 
+"2","A","0","16777215","4","0","0","0","false","false","false","true","mt1_001","O020209361","melamin","0", 
+"2","A","0","16777215","4","0","0","0","true","false","false","false","mt1_001","O020209361","melamin","0", 
+"2","A","0","16777215","4","0","0","0","false","false","true","false","mt1_001","O020209361","melamin","0", 
+
+"2","R","Ruèkica","1611","90","664","242","0","130","100","0","1","8","0","0","0","7"," ","false","true","8421504","false","0","Lijeva Vrata206.S-30","Lijeva Vrata206.V-130/2","","","","","0","0","","ametal","False","False","","","","","","True","",""," "," "," "," "," "," "," "," "," "," ", 
+
+"0","E","Ormar1","","0","2900","0","550","2000","550","18","1200","2","true",""," 0","0","0","1660.9658203125","0","0","0","true","false","","","","","","","A33921","0","0","","","false","0","0","0","0","0","0","1","1","1","false","false","false","false","","","","","","","","","","","", 
+"1","VAR","RVARS=6",visina_poda=100,Polica_uza=1,ledja_Z_pomak=10,ledja_LD_falc=0,ledja_pod_falc=0,ledja_gore_falc=0,
+"1","EFC","RVTOKLK=""""""Materijal"""","""""""","""""""","""""""",""""Prema tipu ploha u elementu"""""",""""""Korpus"""",""""kn"""",""""PT_BodySqr"""",""""45.50"""",""""Površina poda, bokova i ojaèanja"""""",""""""Fronte"""",""""kn"""",""""PT_FaceSqr"""",""""60.00"""",""""Površina fronti"""""",""""""Police"""",""""kn"""",""""PT_ShelSqr"""",""""45.50"""",""""Površina polica"""""",""""""Cokl"""",""""kn"""",""""PT_ToekSqr"""",""""45.50"""",""""Površina cokla"""""",""""""Radna_ploca"""",""""kn"""",""""PT_WorkTopSqr"""",""""130.00"""",""""Površina radne ploce"""""",""""""Ledja"""",""""kn"""",""""PT_BackSqr"""",""""30.00"""",""""Površina ledja"""""",""""""Okviri"""",""""kn"""",""""CB_BarLen"""",""""70.00"""",""""Dužina okvira na frontama s ukladama"""""",""""""Custom"""",""""kn"""",""""PT_CustSqr"""",""""120.00"""",""""Površina ploha tipa """"""""Custom"""""""""""""",""""""Usluge"""","""""""","""""""","""""""","""""""""",""""""Obrada_okvira"""",""""kn"""",""""CB_BarQty"""",""""20.00"""",""""Obrada okvira po komadu"""""",""""""Lakiranje_fronti"""",""""kn"""",""""PT_FaceSqr*_Lakiranje"""",""""500.00"""",""""Površina fronti"""""",""""""Bušenje_rupa"""",""""kn"""",""""CB_HoleQty"""",""""2.00"""",""""Broj rupa"""""",""""""Ugradnja_ladica"""",""""kn"""",""""CB_DrawQty"""",""""20.00"""",""""Broj ladica"""""",""""""Montaža"""",""""kn"""",""""_Montaza"""",""""50.00"""",""""Cijena jednog radnog sata""""""","RVARS=B=VISINA,L=ŠIRINA,D=DEBLJINA,_Montaza=1,_Lakiranje=1"
+"1","EEX","EATCAL=2",
+"1","D","Leða","8","0","18","118","-540","1864","1164","20","1","0","0","0","0","8"," ","false","true","16777215","false","0","lijeva stranica.debljina-ledja_ld_falc","visina_poda+pod.debljina-ledja_pod_falc","0-dubina+ledja_z_pomak","visina-visina_poda-pod.debljina-strop.debljina+ledja_gore_falc","širina-lijeva stranica.debljina-desna stranica.debljina+2*ledja_ld_falc","","0","0","","mt1_008","False","False","","","","","","False","",""," "," "," "," "," "," "," "," "," "," ", 
+"2","A","1","16777215","10","93","Obukva7396","Drvene tiple - razne", 
+
+"1","D","Lijeva Stranica","8","0","0","0","0","2000","550","18","0","0","0","0","0","0"," ","false","true","16777215","false","0","0","0","","visina","dubina","","0","0","","mt1_008","False","False","","","","","","False","",""," "," "," "," "," "," "," "," "," "," ", 
+"2","A","0","16777215","4","0","0","0","false","false","true","false","mt1_001","O020209361","melamin","0", 
+"2","A","0","16777215","4","0","0","0","false","true","false","false","mt1_001","O020209361","melamin","0", 
+"2","A","0","16777215","4","0","0","0","false","false","false","true","mt1_001","O020209361","melamin","0", 
+"2","A","0","16777215","4","0","0","0","true","false","false","false","mt1_001","O020209361","melamin","0", 
+
+"1","D","Desna Stranica","8","0","1182","0","0","2000","550","18","0","0","0","0","0","0"," ","false","true","16777215","false","0","širina-desna stranica.de","0","0","visina","dubina","","0","0","","mt1_008","False","False","","","","","","False","",""," "," "," "," "," "," "," "," "," "," ", 
+"2","A","0","16777215","4","0","0","0","false","false","true","false","mt1_001","O020209361","melamin","0", 
+"2","A","0","16777215","4","0","0","0","false","true","false","false","mt1_001","O020209361","melamin","0", 
+"2","A","0","16777215","4","0","0","0","false","false","false","true","mt1_001","O020209361","melamin","0", 
+"2","A","0","16777215","4","0","0","0","true","false","false","false","mt1_001","O020209361","melamin","0", 
+
+"1","D","Pod","8","0","18","100","0","1164","550","18","2","0","0","0","0","0"," ","false","true","16777215","false","0","lijeva stranica.debljina","visina_poda","0","širina-lijeva stranica.debljina-desna stranica.debljina","dubina","","0","0","","mt1_008","False","False","","","","","","False","",""," "," "," "," "," "," "," "," "," "," ", 
+"2","A","0","16777215","4","0","0","0","false","false","true","false","mt1_001","O020209361","melamin","0", 
+"2","A","0","16777215","4","0","0","0","false","false","false","true","mt1_001","O020209361","melamin","0", 
+
+"1","D","Strop","8","0","18","1982","0","1164","550","18","2","0","0","0","0","0"," ","false","true","16777215","false","0","lijeva stranica.debljina","Visina-Strop.De","","širina-lijeva stranica.debljina-desna stranica.debljina","dubina","","0","0","","mt1_008","False","False","","","","","","False","",""," "," "," "," "," "," "," "," "," "," ", 
+"2","A","0","16777215","4","0","0","0","false","false","false","true","mt1_001","O020209361","melamin","0", 
+"2","A","0","16777215","4","0","0","0","false","false","true","false","mt1_001","O020209361","melamin","0", 
+"2","A","1","16777215","25","93","Obukva7396","Drvene tiple - razne", 
+"2","A","1","16777215","1","136","OSPAX-6688","Iver vij.upuš.gl.polu navoj bij.pocin.", 
+
+"1","D","Ukrasna letvica","8","0","18","0","-23","100","1164","18","1","0","0","0","0","3"," ","false","true","16777215","false","0","lijeva stranica.debljina","0","0-ukrasna letvica.debljina-5","Pod.y","širina-lijeva stranica.debljina-desna stranica.debljina","","0","0","","mt1_008","False","True","","","","","","False","",""," "," "," "," "," "," "," "," "," "," ", 
+
+"1","D","Daska114","9","0","591","118","0","1864","520","18","0","0","0","0","0","2"," ","false","true","16777215","false","0","širina/2-daska114.debljina/2","Pod.y+Pod.De","","Strop.y-Pod.De-Pod.y","0-Leða.z-Leða.De","","0","0","","mt1_009","False","False","","","","","","False","",""," "," "," "," "," "," "," "," "," "," ", 
+
+"1","D","Polica116","9","0","609","450","-20","572","500","18","2","0","0","0","0","2"," ","false","true","16777215","false","0","Daska114.x+Daska114.De","","","Desna Stranica.x-Daska114.De-Daska114.x-Polica_uza","0-Leða.z-Leða.De-20","","0","0","","mt1_009","False","False","","","","","","False","",""," "," "," "," "," "," "," "," "," "," ", 
+"2","A","0","16777215","4","0","0","0","false","false","true","false","mt1_008","O020209361","melamin","0", 
+
+"1","D","Polica117","9","0","18","1790","-20","572","500","18","2","0","0","0","0","2"," ","false","true","16777215","false","0","Lijeva Stranica.x+Lijeva Stranica.De","","","Daska114.x-Lijeva Stranica.De-Lijeva Stranica.x-Polica_uza","0-Leða.z-Leða.De-20","","0","0","","mt1_009","False","False","","","","","","False","",""," "," "," "," "," "," "," "," "," "," ", 
+"2","A","0","16777215","4","0","0","0","false","false","true","false","mt1_008","O020209361","melamin","0", 
+
+"1","D","Polica118","9","0","18","316","-20","572","500","18","2","0","0","0","0","2"," ","false","true","16777215","false","0","Lijeva Stranica.x+Lijeva Stranica.De","","","Daska114.x-Lijeva Stranica.De-Lijeva Stranica.x-Polica_uza","0-Leða.z-Leða.De-20","","0","0","","mt1_009","False","False","","","","","","False","",""," "," "," "," "," "," "," "," "," "," ", 
+"2","A","0","16777215","4","0","0","0","false","false","true","false","mt1_008","O020209361","melamin","0", 
+
+"1","D","Polica119","9","0","609","874","-20","572","500","18","2","0","0","0","0","2"," ","false","true","16777215","false","0","Daska114.x+Daska114.De","","","Desna Stranica.x-Daska114.De-Daska114.x-Polica_uza","0-Leða.z-Leða.De-20","","0","0","","mt1_009","False","False","","","","","","False","",""," "," "," "," "," "," "," "," "," "," ", 
+"2","A","0","16777215","4","0","0","0","false","false","true","false","mt1_008","O020209361","melamin","0", 
+
+"1","D","Polica120","9","0","609","1276","-20","572","500","18","2","0","0","0","0","2"," ","false","true","16777215","false","0","Daska114.x+Daska114.De","","","Desna Stranica.x-Daska114.De-Daska114.x-Polica_uza","0-Leða.z-Leða.De-20","","0","0","","mt1_009","False","False","","","","","","False","",""," "," "," "," "," "," "," "," "," "," ", 
+"2","A","0","16777215","4","0","0","0","false","false","true","false","mt1_008","O020209361","melamin","0", 
+
+"1","D","Polica121","9","0","609","1650","-20","572","500","18","2","0","0","0","0","2"," ","false","true","16777215","false","0","Daska114.x+Daska114.De","","","Desna Stranica.x-Daska114.De-Daska114.x-Polica_uza","0-Leða.z-Leða.De-20","","0","0","","mt1_009","False","False","","","","","","False","",""," "," "," "," "," "," "," "," "," "," ", 
+"2","A","0","16777215","4","0","0","0","false","false","true","false","mt1_008","O020209361","melamin","0", 
+
+"1","D","Nogica8","0","0","18","1690","-204","573","20","18","0","0","0","0","0","5"," ","false","true","16777215","false","0","lijeva stranica.debljina","polica117.y-100","","daska114.x-lijeva stranica.x-lijeva stranica.debljina","","","0","270","","_0","False","False","","","","","","False","",""," "," "," "," "," "," "," "," "," "," ", 
+
+"1","D","Vrata Lijeva","8","315","3","103","0","1894","594","18","1","0","0","0","0","1"," ","false","true","16777215","false","1","3","Pod.y+3","","V-Pod.y-6","S/2-6","","0","0","","mt1_008","False","False","","","","","","False","",""," "," "," "," "," "," "," "," "," "," ", 
+"2","A","0","16777215","4","0","0","0","true","false","false","false","mt1_001","O020209361","melamin","0", 
+"2","A","0","16777215","4","0","0","0","false","true","false","false","mt1_001","O020209361","melamin","0", 
+"2","A","0","16777215","4","0","0","0","false","false","false","true","mt1_001","O020209361","melamin","0", 
+"2","A","0","16777215","4","0","0","0","false","false","true","false","mt1_001","O020209361","melamin","0", 
+
+"2","R","Ruèkica","1611","90","564","882","0","130","100","0","1","8","0","0","0","7"," ","false","true","8421504","false","0","Vrata Lijeva.S-30","(vrata lijeva.v-130)/2","","","","","0","0","","ametal","False","False","","","","","","True","",""," "," "," "," "," "," "," "," "," "," ", 
+
+"1","D","Vrata Desna","8","0","603","103","0","1894","594","18","1","0","0","0","0","1"," ","false","true","16777215","false","2","Vrata Lijeva.x+Vrata Lijeva.S+6","Pod.y+3","","V-Pod.y-6","Vrata Lijeva.S","","0","0","","mt1_008","False","False","","","","","","False","",""," "," "," "," "," "," "," "," "," "," ", 
+"2","A","0","16777215","4","0","0","0","true","false","false","false","mt1_001","O020209361","melamin","0", 
+"2","A","0","16777215","4","0","0","0","false","false","false","true","mt1_001","O020209361","melamin","0", 
+"2","A","0","16777215","4","0","0","0","false","false","true","false","mt1_001","O020209361","melamin","0", 
+"2","A","0","16777215","4","0","0","0","false","true","false","false","mt1_001","O020209361","melamin","0", 
+
+"2","R","Ruèkica","1611","90","30","882","0","130","100","0","1","8","0","0","0","7"," ","false","true","8421504","false","0","30","(vrata desna.v-130)/2","","","","","0","0","","ametal","False","False","","","","","","True","",""," "," "," "," "," "," "," "," "," "," ", 
+
+"0","E","Stol04","","90","650","0","2650","700","550","18","1500","2","true",""," 0","0","0","434.820709228516","0","0","0","true","false","","","","","","","A33921","0","0","","","false","0","0","0","0","0","0","1","1","1","false","false","false","false","","","","","","","","","","","", 
+"1","VAR","RVARS=6",pretinac=150,sirina_boksa=300,strop_siri_LD=50,strop_dublji_N=50,ledja_Y=300,sirina_boksa2=300,
+"1","EFC","RVTOKLK=""""""Materijal"""","""""""","""""""","""""""",""""Prema tipu ploha u elementu"""""",""""""Korpus"""",""""kn"""",""""PT_BodySqr"""",""""45.50"""",""""Površina poda, bokova i ojaèanja"""""",""""""Fronte"""",""""kn"""",""""PT_FaceSqr"""",""""60.00"""",""""Površina fronti"""""",""""""Police"""",""""kn"""",""""PT_ShelSqr"""",""""45.50"""",""""Površina polica"""""",""""""Cokl"""",""""kn"""",""""PT_ToekSqr"""",""""45.50"""",""""Površina cokla"""""",""""""Radna_ploca"""",""""kn"""",""""PT_WorkTopSqr"""",""""130.00"""",""""Površina radne ploce"""""",""""""Ledja"""",""""kn"""",""""PT_BackSqr"""",""""30.00"""",""""Površina ledja"""""",""""""Okviri"""",""""kn"""",""""CB_BarLen"""",""""70.00"""",""""Dužina okvira na frontama s ukladama"""""",""""""Custom"""",""""kn"""",""""PT_CustSqr"""",""""120.00"""",""""Površina ploha tipa """"""""Custom"""""""""""""",""""""Usluge"""","""""""","""""""","""""""","""""""""",""""""Obrada_okvira"""",""""kn"""",""""CB_BarQty"""",""""20.00"""",""""Obrada okvira po komadu"""""",""""""Lakiranje_fronti"""",""""kn"""",""""PT_FaceSqr*_Lakiranje"""",""""500.00"""",""""Površina fronti"""""",""""""Bušenje_rupa"""",""""kn"""",""""CB_HoleQty"""",""""2.00"""",""""Broj rupa"""""",""""""Ugradnja_ladica"""",""""kn"""",""""CB_DrawQty"""",""""20.00"""",""""Broj ladica"""""",""""""Montaža"""",""""kn"""",""""_Montaza"""",""""50.00"""",""""Cijena jednog radnog sata""""""","RVARS=B=VISINA,L=ŠIRINA,D=DEBLJINA,_Montaza=1,_Lakiranje=1"
+"1","EEX","EATCAL=2",
+"1","D","Leða","8","0","68","300","-550","382","1364","18","1","0","0","0","0","8"," ","false","true","16777215","false","0","lijeva stranica.debljina+strop_siri_ld","ledja_y","0-Dubina","visina-leða.y-strop.debljina","desna stranica0.x-lijeva stranica.x-desna stranica0.debljina","","0","0","","mt1_008","False","False","","","","","","False","",""," "," "," "," "," "," "," "," "," "," ", 
+"2","A","0","16777215","4","0","0","0","true","false","false","false","mt1_001","O020209361","melamin","0", 
+"2","A","1","16777215","10","93","Obukva7396","Drvene tiple - razne", 
+
+"1","D","Lijeva Stranica","8","0","50","0","-50","682","500","18","0","0","0","0","0","0"," ","false","true","16777215","false","0","strop_siri_ld","0","0-strop_dublji_n","visina-strop.debljina","dubina-strop_dublji_n","","0","0","","mt1_008","False","False","","","","","","False","",""," "," "," "," "," "," "," "," "," "," ", 
+"2","A","0","16777215","4","0","0","0","true","false","false","false","mt1_001","O020209361","melamin","0", 
+"2","A","0","16777215","4","0","0","0","false","false","false","true","mt1_001","O020209361","melamin","0", 
+"2","A","0","16777215","4","0","0","0","false","false","true","false","mt1_001","O020209361","melamin","0", 
+
+"1","D","Desna Stranica","8","0","1114","0","-50","682","482","18","0","0","0","0","0","0"," ","false","true","16777215","false","0","širina-desna stranica.de-strop_siri_ld-sirina_boksa-desna stranica0.debljina","0","0-strop_dublji_n","visina-strop.debljina","dubina-leða.debljina-strop_dublji_n","","0","0","","mt1_008","False","False","","","","","","False","",""," "," "," "," "," "," "," "," "," "," ", 
+"2","A","0","16777215","4","0","0","0","false","false","false","true","mt1_001","O020209361","melamin","0", 
+"2","A","0","16777215","4","0","0","0","true","false","false","false","mt1_001","O020209361","melamin","0", 
+"2","A","0","16777215","4","0","0","0","false","false","true","false","mt1_001","O020209361","melamin","0", 
+
+"1","D","Strop","8","0","0","682","0","1500","550","18","2","0","0","0","0","0"," ","false","true","16777215","false","0","0","visina-strop.debljina","0","širina","dubina","","0","0","","mt1_008","False","False","","","","","","False","",""," "," "," "," "," "," "," "," "," "," ", 
+"2","A","0","16777215","1","0","0","0","false","true","false","false","mt1_001","O21813","ABS 1mm","1", 
+"2","A","0","16777215","1","0","0","0","false","false","true","false","mt1_001","O21813","ABS 1mm","1", 
+"2","A","0","16777215","1","0","0","0","true","false","false","false","mt1_001","O21813","ABS 1mm","1", 
+"2","A","0","16777215","1","0","0","0","false","false","false","true","mt1_001","O21813","ABS 1mm","1", 
+"2","A","1","16777215","25","93","Obukva7396","Drvene tiple - razne", 
+"2","A","1","16777215","1","136","OSPAX-6688","Iver vij.upuš.gl.polu navoj bij.pocin.", 
+
+"1","D","Desna Stranica0","8","0","1432","0","-50","682","500","18","0","0","0","0","0","0"," ","false","true","16777215","false","0","desna stranica.x+sirina_boksa+desna stranica.debljina","0","0-strop_dublji_n","visina-strop.debljina","dubina-strop_dublji_n","","0","0","","mt1_008","False","False","","","","","","False","",""," "," "," "," "," "," "," "," "," "," ", 
+"2","A","0","16777215","4","0","0","0","true","false","false","false","mt1_001","O020209361","melamin","0", 
+"2","A","0","16777215","4","0","0","0","false","false","false","true","mt1_001","O020209361","melamin","0", 
+"2","A","0","16777215","4","0","0","0","false","false","true","false","mt1_001","O020209361","melamin","0", 
+
+"1","D","Polica1","9","0","1132","50","-50","300","482","18","2","0","0","0","0","2"," ","false","true","16777215","false","0","Desna Stranica.x+Desna Stranica.De","50","0-strop_dublji_n","sirina_boksa","dubina-strop_dublji_n-leða.debljina","","0","0","","mt1_009","False","False","","","","","","False","",""," "," "," "," "," "," "," "," "," "," ", 
+"2","A","0","16777215","4","0","0","0","false","false","false","true","mt1_008","O020209361","melamin","0", 
+"2","A","0","16777215","4","0","0","0","false","false","true","false","mt1_008","O020209361","melamin","0", 
+
+"1","D","Polica2","9","0","1132","300","-50","300","482","18","2","0","0","0","0","2"," ","false","true","16777215","false","0","desna stranica.x+desna stranica.debljina","leða.y","0-strop_dublji_n","sirina_boksa","dubina-strop_dublji_n-leða.debljina","","0","0","","mt1_009","False","False","","","","","","False","",""," "," "," "," "," "," "," "," "," "," ", 
+"2","A","0","16777215","4","0","0","0","false","false","true","false","mt1_008","O020209361","melamin","0", 
+
+"1","D","Polica3","9","0","1132","509","-50","300","482","18","2","0","0","0","0","2"," ","false","true","16777215","false","0","Desna Stranica.x+Desna Stranica.De","visina-(strop.y-polica2.y)/2","0-strop_dublji_n","sirina_boksa","dubina-strop_dublji_n-leða.debljina","","0","0","","mt1_009","False","False","","","","","","False","",""," "," "," "," "," "," "," "," "," "," ", 
+"2","A","0","16777215","4","0","0","0","false","false","true","false","mt1_008","O020209361","melamin","0", 
+
+"1","D","Lijeva2","8","0","368","0","-50","682","482","18","0","0","0","0","0","0"," ","false","true","16777215","false","0","sirina_boksa2+strop_siri_ld+lijeva stranica.debljina","0","0-strop_dublji_n","visina-strop.debljina","dubina-strop_dublji_n-leða.debljina","","0","0","","mt1_008","False","False","","","","","","False","",""," "," "," "," "," "," "," "," "," "," ", 
+"2","A","0","16777215","4","0","0","0","true","false","false","false","mt1_001","O020209361","melamin","0", 
+"2","A","0","16777215","4","0","0","0","false","false","false","true","mt1_001","O020209361","melamin","0", 
+"2","A","0","16777215","4","0","0","0","false","false","true","false","mt1_001","O020209361","melamin","0", 
+
+"1","D","Polica4","9","0","68","509","-50","300","482","18","2","0","0","0","0","2"," ","false","true","16777215","false","0","lijeva stranica.x+lijeva stranica.debljina","visina-(strop.y-polica2.y)/2","0-strop_dublji_n","sirina_boksa2","dubina-strop_dublji_n-leða.debljina","","0","0","","mt1_009","False","False","","","","","","False","",""," "," "," "," "," "," "," "," "," "," ", 
+"2","A","0","16777215","4","0","0","0","false","false","true","false","mt1_008","O020209361","melamin","0", 
+
+"1","D","Polica5","9","0","68","300","-50","300","482","18","2","0","0","0","0","2"," ","false","true","16777215","false","0","lijeva stranica.x+lijeva stranica.debljina","leða.y","0-strop_dublji_n","sirina_boksa2","dubina-strop_dublji_n-leða.debljina","","0","0","","mt1_009","False","False","","","","","","False","",""," "," "," "," "," "," "," "," "," "," ", 
+"2","A","0","16777215","4","0","0","0","false","false","true","false","mt1_008","O020209361","melamin","0", 
+
+"1","D","pretinac","9","0","386","575","-80","728","452","18","2","0","0","0","0","2"," ","false","true","16777215","false","0","Lijeva2.x+Lijeva2.De","","0-strop_dublji_n-30","desna stranica.x-lijeva2.de-lijeva2.x","dubina-strop_dublji_n-30-leða.debljina","","0","0","","mt1_009","False","False","","","","","","False","",""," "," "," "," "," "," "," "," "," "," ", 
+"2","A","0","16777215","4","0","0","0","false","false","true","false","mt1_008","O020209361","melamin","0", 
+
+"1","D","Polica6","9","0","1132","50","-50","300","482","18","2","0","0","0","0","2"," ","false","true","16777215","false","0","Desna Stranica.x+Desna Stranica.De","50","0-strop_dublji_n","sirina_boksa","dubina-strop_dublji_n-leða.debljina","","0","0","","mt1_009","False","False","","","","","","False","",""," "," "," "," "," "," "," "," "," "," ", 
+"2","A","0","16777215","4","0","0","0","false","false","false","true","mt1_008","O020209361","melamin","0", 
+"2","A","0","16777215","4","0","0","0","false","false","true","false","mt1_008","O020209361","melamin","0", 
+
+"1","D","Polica7","9","0","68","50","-50","300","482","18","2","0","0","0","0","2"," ","false","true","16777215","false","0","lijeva stranica.x+desna stranica.de","50","0-strop_dublji_n","sirina_boksa2","dubina-strop_dublji_n-leða.debljina","","0","0","","mt1_009","False","False","","","","","","False","",""," "," "," "," "," "," "," "," "," "," ", 
+"2","A","0","16777215","4","0","0","0","false","false","false","true","mt1_008","O020209361","melamin","0", 
+"2","A","0","16777215","4","0","0","0","false","false","true","false","mt1_008","O020209361","melamin","0", 
+
+"1","D","Lijeva Vrata138","8","0","53","53","-50","471","330","18","1","0","0","0","0","1"," ","false","true","16777215","false","1","Lijeva Stranica.X+3","Polica7.y+3","0-strop_dublji_n","Polica4.y+Polica4.De-Polica7.y-6","Lijeva2.x+Lijeva2.De-Lijeva Stranica.x-6","","0","0","","mt1_008","False","False","","","","","","False","",""," "," "," "," "," "," "," "," "," "," ", 
+"2","A","0","16777215","4","0","0","0","false","true","false","false","mt1_001","O020209361","melamin","0", 
+"2","A","0","16777215","4","0","0","0","false","false","false","true","mt1_001","O020209361","melamin","0", 
+"2","A","0","16777215","4","0","0","0","true","false","false","false","mt1_001","O020209361","melamin","0", 
+"2","A","0","16777215","4","0","0","0","false","false","true","false","mt1_001","O020209361","melamin","0", 
+
+"2","R","Ruèkica","1611","180","300","421","0","130","100","0","1","8","0","0","0","7"," ","false","true","8421504","false","0","lijeva vrata138.s-30","lijeva vrata138.v-100/2","","","","","0","0","","ametal","False","False","","","","","","True","",""," "," "," "," "," "," "," "," "," "," ", 
+
+"1","E","stol_dod","","0","0","700","-250","150","300","18","1500","2","true",""," 0","0","0","0","0","0","0","true","false","0","visina","0-dubina+stol_dod.dubina","","širina","","A33921","0","0","","","false","0","0","0","0","0","0","1","1","1","false","false","false","false","","","","","","","","","","","", 
+"2","VAR","RVARS=4",strop_siri_LD=25,box_L=350,box_D=250,strop_N=20,
+"2","EFC","RVTOKLK=""""""Materijal"""","""""""","""""""","""""""",""""Prema tipu ploha u elementu"""""",""""""Korpus"""",""""kn"""",""""PT_BodySqr"""",""""45.50"""",""""Površina poda, bokova i ojaèanja"""""",""""""Fronte"""",""""kn"""",""""PT_FaceSqr"""",""""60.00"""",""""Površina fronti"""""",""""""Police"""",""""kn"""",""""PT_ShelSqr"""",""""45.50"""",""""Površina polica"""""",""""""Cokl"""",""""kn"""",""""PT_ToekSqr"""",""""45.50"""",""""Površina cokla"""""",""""""Radna_ploca"""",""""kn"""",""""PT_WorkTopSqr"""",""""130.00"""",""""Površina radne ploce"""""",""""""Ledja"""",""""kn"""",""""PT_BackSqr"""",""""30.00"""",""""Površina ledja"""""",""""""Okviri"""",""""kn"""",""""CB_BarLen"""",""""70.00"""",""""Dužina okvira na frontama s ukladama"""""",""""""Custom"""",""""kn"""",""""PT_CustSqr"""",""""120.00"""",""""Površina ploha tipa """"""""Custom"""""""""""""",""""""Usluge"""","""""""","""""""","""""""","""""""""",""""""Obrada_okvira"""",""""kn"""",""""CB_BarQty"""",""""20.00"""",""""Obrada okvira po komadu"""""",""""""Lakiranje_fronti"""",""""kn"""",""""PT_FaceSqr*_Lakiranje"""",""""500.00"""",""""Površina fronti"""""",""""""Bušenje_rupa"""",""""kn"""",""""CB_HoleQty"""",""""2.00"""",""""Broj rupa"""""",""""""Ugradnja_ladica"""",""""kn"""",""""CB_DrawQty"""",""""20.00"""",""""Broj ladica"""""",""""""Montaža"""",""""kn"""",""""_Montaza"""",""""50.00"""",""""Cijena jednog radnog sata""""""","RVARS=B=VISINA,L=ŠIRINA,D=DEBLJINA,_Montaza=1,_Lakiranje=1"
+"2","EEX","EATCAL=1",
+"2","D","Lijeva Stranica","8","0","25","0","-20","132","280","18","0","0","0","0","0","0"," ","false","true","16777215","false","0","strop_siri_ld","0","0-strop_n","visina-strop.debljina","dubina-strop_n","","0","0","","mt1_008","False","False","","","","","","False","",""," "," "," "," "," "," "," "," "," "," ", 
+"3","A","0","16777215","4","0","0","0","false","false","true","false","mt1_001","O020209361","melamin","0", 
+"3","A","0","16777215","4","0","0","0","false","false","false","true","mt1_001","O020209361","melamin","0", 
+"3","A","0","16777215","4","0","0","0","true","false","false","false","mt1_001","O020209361","melamin","0", 
+
+"2","D","Desna Stranica","8","0","1189","0","-20","132","280","18","0","0","0","0","0","0"," ","false","true","16777215","false","0","širina-desna stranica.de-strop_siri_ld-box_d-desna stranica0.debljina","0","0-strop_n","visina-strop.debljina","dubina-leða.debljina-strop_n","","0","0","","mt1_008","False","False","","","","","","False","",""," "," "," "," "," "," "," "," "," "," ", 
+"3","A","0","16777215","4","0","0","0","false","false","true","false","mt1_001","O020209361","melamin","0", 
+"3","A","0","16777215","4","0","0","0","true","false","false","false","mt1_001","O020209361","melamin","0", 
+"3","A","0","16777215","4","0","0","0","false","false","false","true","mt1_001","O020209361","melamin","0", 
+
+"2","D","Strop","8","0","0","132","0","1500","300","18","2","0","0","0","0","0"," ","false","true","16777215","false","0","0","visina-strop.debljina","0","širina","dubina","","0","0","","mt1_008","False","False","","","","","","False","",""," "," "," "," "," "," "," "," "," "," ", 
+"3","A","0","16777215","1","0","0","0","false","false","false","true","mt1_001","O21813","ABS 1mm","1", 
+"3","A","0","16777215","1","0","0","0","true","false","false","false","mt1_001","O21813","ABS 1mm","1", 
+"3","A","0","16777215","1","0","0","0","false","false","true","false","mt1_001","O21813","ABS 1mm","1", 
+"3","A","0","16777215","1","0","0","0","false","true","false","false","mt1_001","O21813","ABS 1mm","1", 
+"3","A","1","16777215","25","93","Obukva7396","Drvene tiple - razne", 
+"3","A","1","16777215","1","136","OSPAX-6688","Iver vij.upuš.gl.polu navoj bij.pocin.", 
+
+"2","D","Desna Stranica0","8","0","1457","0","-20","132","280","18","0","0","0","0","0","0"," ","false","true","16777215","false","0","desna stranica.x+box_d+desna stranica.debljina","0","0-strop_n","visina-strop.debljina","dubina-strop_n","","0","0","","mt1_008","False","False","","","","","","False","",""," "," "," "," "," "," "," "," "," "," ", 
+"3","A","0","16777215","4","0","0","0","false","false","true","false","mt1_001","O020209361","melamin","0", 
+"3","A","0","16777215","4","0","0","0","false","false","false","true","mt1_001","O020209361","melamin","0", 
+"3","A","0","16777215","4","0","0","0","true","false","false","false","mt1_001","O020209361","melamin","0", 
+
+"2","D","Lijeva2","8","0","393","0","-20","132","280","18","0","0","0","0","0","0"," ","false","true","16777215","false","0","box_l+strop_siri_ld+lijeva stranica.debljina","0","0-strop_n","visina-strop.debljina","dubina-strop_n-leða.debljina","","0","0","","mt1_008","False","False","","","","","","False","",""," "," "," "," "," "," "," "," "," "," ", 
+"3","A","0","16777215","4","0","0","0","false","false","true","false","mt1_001","O020209361","melamin","0", 
+"3","A","0","16777215","4","0","0","0","false","false","false","true","mt1_001","O020209361","melamin","0", 
+"3","A","0","16777215","4","0","0","0","true","false","false","false","mt1_001","O020209361","melamin","0", 
+
+"1","E","Ladica_","","0","1117","303","-50","108","400","18","330","6","true",""," 0","0","0","0","0","0","0","true","false","Desna Stranica.X+3","","0-strop_dublji_n","","Desna Stranica0.x+Desna Stranica0.De-Desna Stranica.x-6","","A33921","0","0","","","false","0","0","0","0","0","0","1","1","1","false","false","false","false","","","","","","","","","","","", 
+"2","VAR","RVARS=4",BoxD=20,BoxG=20,BoxL=27,BoxDe=27,
+"2","EFC","RVTOKLK=""""""Materijal"""","""""""","""""""","""""""",""""Prema tipu ploha u elementu"""""",""""""Korpus"""",""""kn"""",""""PT_BodySqr"""",""""45.50"""",""""Površina poda, bokova i ojaèanja"""""",""""""Fronte"""",""""kn"""",""""PT_FaceSqr"""",""""60.00"""",""""Površina fronti"""""",""""""Police"""",""""kn"""",""""PT_ShelSqr"""",""""45.50"""",""""Površina polica"""""",""""""Cokl"""",""""kn"""",""""PT_ToekSqr"""",""""45.50"""",""""Površina cokla"""""",""""""Radna_ploca"""",""""kn"""",""""PT_WorkTopSqr"""",""""130.00"""",""""Površina radne ploce"""""",""""""Ledja"""",""""kn"""",""""PT_BackSqr"""",""""30.00"""",""""Površina ledja"""""",""""""Okviri"""",""""kn"""",""""CB_BarLen"""",""""70.00"""",""""Dužina okvira na frontama s ukladama"""""",""""""Custom"""",""""kn"""",""""PT_CustSqr"""",""""120.00"""",""""Površina ploha tipa """"""""Custom"""""""""""""",""""""Usluge"""","""""""","""""""","""""""","""""""""",""""""Obrada_okvira"""",""""kn"""",""""CB_BarQty"""",""""20.00"""",""""Obrada okvira po komadu"""""",""""""Lakiranje_fronti"""",""""kn"""",""""PT_FaceSqr*_Lakiranje"""",""""500.00"""",""""Površina fronti"""""",""""""Bušenje_rupa"""",""""kn"""",""""CB_HoleQty"""",""""2.00"""",""""Broj rupa"""""",""""""Ugradnja_ladica"""",""""kn"""",""""CB_DrawQty"""",""""20.00"""",""""Broj ladica"""""",""""""Montaža"""",""""kn"""",""""_Montaza"""",""""50.00"""",""""Cijena jednog radnog sata""""""","RVARS=B=VISINA,L=ŠIRINA,D=DEBLJINA,_Montaza=1,_Lakiranje=1"
+"2","EEX","EATCAL=1",
+"2","D","Lijeva","8","0","27","38","0","50","400","18","0","0","0","0","0","0"," ","false","true","16777215","false","0","BoxL","BoxD+Pod.De","0","Visina-BoxG-BoxD-Pod.De","Dubina","","0","0","","mt1_008","False","True","","","","","","False","",""," "," "," "," "," "," "," "," "," "," ", 
+"3","A","0","16777215","4","0","0","0","false","true","false","false","mt1_001","O020209361","melamin","0", 
+"3","A","0","16777215","4","0","0","0","false","false","false","true","mt1_001","O020209361","melamin","0", 
+
+"2","D","Desna","8","0","285","38","0","50","400","18","0","0","0","0","0","0"," ","false","true","16777215","false","0","Š-BoxDe-Desna.De","BoxD+Pod.De","0","Visina-BoxG-BoxD-Pod.De","Dubina","","0","0","","mt1_008","False","True","","","","","","False","",""," "," "," "," "," "," "," "," "," "," ", 
+"3","A","0","16777215","4","0","0","0","false","true","false","false","mt1_001","O020209361","melamin","0", 
+"3","A","0","16777215","4","0","0","0","false","false","false","true","mt1_001","O020209361","melamin","0", 
+
+"2","D","Leða","8","0","45","38","-400","50","240","18","1","0","0","0","0","0"," ","false","true","16777215","false","0","Lijeva.X+Lijeva.DE","BoxD+Pod.De","0-dubina","Visina-BoxG-BoxD-Pod.De","Desna.X-Lijeva.X-Lijeva.DE","","0","0","","mt1_008","False","True","","","","","","False","",""," "," "," "," "," "," "," "," "," "," ", 
+"3","A","0","16777215","4","0","0","0","false","true","false","false","mt1_001","O020209361","melamin","0", 
+
+"2","D","Unutarnja","8","0","45","38","-18","50","240","18","1","0","0","0","0","0"," ","false","true","16777215","false","0","Lijeva.X+Lijeva.DE","BoxD+Pod.De","0-Unutarnja.Debljina","Visina-BoxG-BoxD-Pod.De","Desna.X-Lijeva.X-Lijeva.DE","","0","0","","mt1_008","False","True","","","","","","False","",""," "," "," "," "," "," "," "," "," "," ", 
+"3","A","0","16777215","4","0","0","0","false","true","false","false","mt1_001","O020209361","melamin","0", 
+
+"2","D","Pod","8","0","27","20","0","276","400","18","2","0","0","0","0","0"," ","false","true","16777215","false","0","Lijeva.X","BoxD","0","Desna.X-Lijeva.X+Lijeva.DE","Dubina","","0","0","","mt1_008","False","True","","","","","","False","",""," "," "," "," "," "," "," "," "," "," ", 
+"3","A","0","16777215","4","0","0","0","true","false","false","false","mt1_001","O020209361","melamin","0", 
+"3","A","0","16777215","4","0","0","0","false","false","false","true","mt1_001","O020209361","melamin","0", 
+"3","A","0","16777215","4","0","0","0","false","true","false","false","mt1_001","O020209361","melamin","0", 
+
+"2","D","Fronta","8","0","0","0","0","108","330","18","1","0","0","0","0","1"," ","false","true","16777215","false","6","","","","Visina","Širina","","0","0","","mt1_008","False","False","","","","","","False","",""," "," "," "," "," "," "," "," "," "," ", 
+"3","A","0","16777215","4","0","0","0","false","true","false","false","mt1_001","O020209361","melamin","0", 
+"3","A","0","16777215","4","0","0","0","false","false","false","true","mt1_001","O020209361","melamin","0", 
+"3","A","0","16777215","4","0","0","0","true","false","false","false","mt1_001","O020209361","melamin","0", 
+"3","A","0","16777215","4","0","0","0","false","false","true","false","mt1_001","O020209361","melamin","0", 
+
+"3","R","Ruèkica","1611","0","115","54","0","100","100","0","1","8","0","0","0","7"," ","false","true","8421504","false","0","(fronta.s-100)/2","","","","","","0","0","","ametal","False","False","","","","","","True","",""," "," "," "," "," "," "," "," "," "," ", 
+
+"1","E","Ladica_0","","0","1117","417","-50","108","400","18","330","6","true",""," 0","0","0","0","0","0","0","true","false","Desna Stranica.X+3","","0-strop_dublji_n","","Desna Stranica0.x+Desna Stranica0.De-Desna Stranica.x-6","","A33921","0","0","","","false","0","0","0","0","0","0","1","1","1","false","false","false","false","","","","","","","","","","","", 
+"2","VAR","RVARS=4",BoxD=20,BoxG=20,BoxL=27,BoxDe=27,
+"2","EFC","RVTOKLK=""""""Materijal"""","""""""","""""""","""""""",""""Prema tipu ploha u elementu"""""",""""""Korpus"""",""""kn"""",""""PT_BodySqr"""",""""45.50"""",""""Površina poda, bokova i ojaèanja"""""",""""""Fronte"""",""""kn"""",""""PT_FaceSqr"""",""""60.00"""",""""Površina fronti"""""",""""""Police"""",""""kn"""",""""PT_ShelSqr"""",""""45.50"""",""""Površina polica"""""",""""""Cokl"""",""""kn"""",""""PT_ToekSqr"""",""""45.50"""",""""Površina cokla"""""",""""""Radna_ploca"""",""""kn"""",""""PT_WorkTopSqr"""",""""130.00"""",""""Površina radne ploce"""""",""""""Ledja"""",""""kn"""",""""PT_BackSqr"""",""""30.00"""",""""Površina ledja"""""",""""""Okviri"""",""""kn"""",""""CB_BarLen"""",""""70.00"""",""""Dužina okvira na frontama s ukladama"""""",""""""Custom"""",""""kn"""",""""PT_CustSqr"""",""""120.00"""",""""Površina ploha tipa """"""""Custom"""""""""""""",""""""Usluge"""","""""""","""""""","""""""","""""""""",""""""Obrada_okvira"""",""""kn"""",""""CB_BarQty"""",""""20.00"""",""""Obrada okvira po komadu"""""",""""""Lakiranje_fronti"""",""""kn"""",""""PT_FaceSqr*_Lakiranje"""",""""500.00"""",""""Površina fronti"""""",""""""Bušenje_rupa"""",""""kn"""",""""CB_HoleQty"""",""""2.00"""",""""Broj rupa"""""",""""""Ugradnja_ladica"""",""""kn"""",""""CB_DrawQty"""",""""20.00"""",""""Broj ladica"""""",""""""Montaža"""",""""kn"""",""""_Montaza"""",""""50.00"""",""""Cijena jednog radnog sata""""""","RVARS=B=VISINA,L=ŠIRINA,D=DEBLJINA,_Montaza=1,_Lakiranje=1"
+"2","EEX","EATCAL=1",
+"2","D","Lijeva","8","0","27","38","0","50","400","18","0","0","0","0","0","0"," ","false","true","16777215","false","0","BoxL","BoxD+Pod.De","0","Visina-BoxG-BoxD-Pod.De","Dubina","","0","0","","mt1_008","False","True","","","","","","False","",""," "," "," "," "," "," "," "," "," "," ", 
+"3","A","0","16777215","4","0","0","0","false","true","false","false","mt1_001","O020209361","melamin","0", 
+
+"2","D","Desna","8","0","285","38","0","50","400","18","0","0","0","0","0","0"," ","false","true","16777215","false","0","Š-BoxDe-Desna.De","BoxD+Pod.De","0","Visina-BoxG-BoxD-Pod.De","Dubina","","0","0","","mt1_008","False","True","","","","","","False","",""," "," "," "," "," "," "," "," "," "," ", 
+"3","A","0","16777215","4","0","0","0","false","true","false","false","mt1_001","O020209361","melamin","0", 
+
+"2","D","Leða","8","0","45","38","-400","50","240","18","1","0","0","0","0","0"," ","false","true","16777215","false","0","Lijeva.X+Lijeva.DE","BoxD+Pod.De","0-dubina","Visina-BoxG-BoxD-Pod.De","Desna.X-Lijeva.X-Lijeva.DE","","0","0","","mt1_008","False","True","","","","","","False","",""," "," "," "," "," "," "," "," "," "," ", 
+"3","A","0","16777215","4","0","0","0","false","true","false","false","mt1_001","O020209361","melamin","0", 
+
+"2","D","Unutarnja","8","0","45","38","-18","50","240","18","1","0","0","0","0","0"," ","false","true","16777215","false","0","Lijeva.X+Lijeva.DE","BoxD+Pod.De","0-Unutarnja.Debljina","Visina-BoxG-BoxD-Pod.De","Desna.X-Lijeva.X-Lijeva.DE","","0","0","","mt1_008","False","True","","","","","","False","",""," "," "," "," "," "," "," "," "," "," ", 
+"3","A","0","16777215","4","0","0","0","false","true","false","false","mt1_001","O020209361","melamin","0", 
+
+"2","D","Pod","8","0","27","20","0","276","400","18","2","0","0","0","0","0"," ","false","true","16777215","false","0","Lijeva.X","BoxD","0","Desna.X-Lijeva.X+Lijeva.DE","Dubina","","0","0","","mt1_008","False","True","","","","","","False","",""," "," "," "," "," "," "," "," "," "," ", 
+"3","A","0","16777215","4","0","0","0","true","false","false","false","mt1_001","O020209361","melamin","0", 
+"3","A","0","16777215","4","0","0","0","false","false","false","true","mt1_001","O020209361","melamin","0", 
+"3","A","0","16777215","4","0","0","0","false","true","false","false","mt1_001","O020209361","melamin","0", 
+
+"2","D","Fronta","8","0","0","0","0","108","330","18","1","0","0","0","0","1"," ","false","true","16777215","false","6","","","","Visina","Širina","","0","0","","mt1_008","False","False","","","","","","False","",""," "," "," "," "," "," "," "," "," "," ", 
+"3","A","0","16777215","4","0","0","0","false","true","false","false","mt1_001","O020209361","melamin","0", 
+"3","A","0","16777215","4","0","0","0","false","false","true","false","mt1_001","O020209361","melamin","0", 
+"3","A","0","16777215","4","0","0","0","true","false","false","false","mt1_001","O020209361","melamin","0", 
+"3","A","0","16777215","4","0","0","0","false","false","false","true","mt1_001","O020209361","melamin","0", 
+
+"3","R","Ruèkica","1611","0","115","54","0","100","100","0","1","8","0","0","0","7"," ","false","true","8421504","false","0","(fronta.s-100)/2","","","","","","0","0","","ametal","False","False","","","","","","True","",""," "," "," "," "," "," "," "," "," "," ", 
+
+"0","E","Konzola2","","90","300","1500","2650","500","300","18","2350","4","true",""," 0","0","0","499.180816650391","0","0","0","true","false","","","","","","","A33921","0","0","","","false","0","0","0","0","0","0","1","1","1","false","false","false","false","","","","","","","","","","","", 
+"1","VAR","RVARS=2",Polica_uza=1,strop_nap=20,
+"1","EFC","RVTOKLK=""""""Materijal"""","""""""","""""""","""""""",""""Prema tipu ploha u elementu"""""",""""""Korpus"""",""""kn"""",""""PT_BodySqr"""",""""45.50"""",""""Površina poda, bokova i ojaèanja"""""",""""""Fronte"""",""""kn"""",""""PT_FaceSqr"""",""""60.00"""",""""Površina fronti"""""",""""""Police"""",""""kn"""",""""PT_ShelSqr"""",""""45.50"""",""""Površina polica"""""",""""""Cokl"""",""""kn"""",""""PT_ToekSqr"""",""""45.50"""",""""Površina cokla"""""",""""""Radna_ploca"""",""""kn"""",""""PT_WorkTopSqr"""",""""130.00"""",""""Površina radne ploce"""""",""""""Ledja"""",""""kn"""",""""PT_BackSqr"""",""""30.00"""",""""Površina ledja"""""",""""""Okviri"""",""""kn"""",""""CB_BarLen"""",""""70.00"""",""""Dužina okvira na frontama s ukladama"""""",""""""Custom"""",""""kn"""",""""PT_CustSqr"""",""""120.00"""",""""Površina ploha tipa """"""""Custom"""""""""""""",""""""Usluge"""","""""""","""""""","""""""","""""""""",""""""Obrada_okvira"""",""""kn"""",""""CB_BarQty"""",""""20.00"""",""""Obrada okvira po komadu"""""",""""""Lakiranje_fronti"""",""""kn"""",""""PT_FaceSqr*_Lakiranje"""",""""500.00"""",""""Površina fronti"""""",""""""Bušenje_rupa"""",""""kn"""",""""CB_HoleQty"""",""""2.00"""",""""Broj rupa"""""",""""""Ugradnja_ladica"""",""""kn"""",""""CB_DrawQty"""",""""20.00"""",""""Broj ladica"""""",""""""Montaža"""",""""kn"""",""""_Montaza"""",""""50.00"""",""""Cijena jednog radnog sata""""""","RVARS=B=VISINA,L=ŠIRINA,D=DEBLJINA,_Montaza=1,_Lakiranje=1"
+"1","EEX","EATCAL=2",
+"1","D","Leða","8","0","0","0","-300","500","2350","18","1","0","0","0","0","8"," ","false","true","16777215","false","0","Lijeva Stranica.X","Pod.y","0-Dubina","Visina-Pod.y","Desna Stranica.X+Desna Stranica.Debljina-Lijeva Stranica.X","","0","0","","mt1_008","False","False","","","","","","False","",""," "," "," "," "," "," "," "," "," "," ", 
+"2","A","0","16777215","4","0","0","0","false","true","false","false","mt1_001","O020209361","melamin","0", 
+"2","A","0","16777215","4","0","0","0","false","false","false","true","mt1_001","O020209361","melamin","0", 
+"2","A","0","16777215","4","0","0","0","true","false","false","false","mt1_001","O020209361","melamin","0", 
+"2","A","0","16777215","4","0","0","0","false","false","true","false","mt1_001","O020209361","melamin","0", 
+
+"1","D","Lijeva Stranica","8","0","0","18","-20","464","262","18","0","0","0","0","0","0"," ","false","true","16777215","false","0","","pod.debljina","0-strop_nap","visina-pod.debljina-strop.debljina","dubina-strop_nap-leða.debljina","","0","0","","mt1_008","False","False","","","","","","False","",""," "," "," "," "," "," "," "," "," "," ", 
+"2","A","0","16777215","4","0","0","0","false","false","true","false","mt1_001","O020209361","melamin","0", 
+
+"1","D","Desna Stranica","8","0","2332","18","-20","464","262","18","0","0","0","0","0","0"," ","false","true","16777215","false","0","Širina-Desna Stranica.DE","pod.debljina","0-strop_nap","visina-pod.debljina-strop.debljina","dubina-leða.debljina-strop_nap","","0","0","","mt1_008","False","False","","","","","","False","",""," "," "," "," "," "," "," "," "," "," ", 
+"2","A","0","16777215","4","0","0","0","false","false","true","false","mt1_001","O020209361","melamin","0", 
+
+"1","D","Pod","8","0","0","0","-20","2350","262","18","2","0","0","0","0","0"," ","false","true","16777215","false","0","0","","0-strop_nap","širina","dubina-leða.debljina-strop_nap","","0","0","","mt1_008","False","False","","","","","","False","",""," "," "," "," "," "," "," "," "," "," ", 
+"2","A","0","16777215","4","0","0","0","false","true","false","false","mt1_001","O020209361","melamin","0", 
+"2","A","0","16777215","4","0","0","0","false","false","true","false","mt1_001","O020209361","melamin","0", 
+"2","A","0","16777215","4","0","0","0","true","false","false","false","mt1_001","O020209361","melamin","0", 
+
+"1","D","Strop","8","0","0","482","0","2350","282","18","2","0","0","0","0","0"," ","false","true","16777215","false","0","0","Visina-Strop.De","","širina","0-Leða.z-Leða.De","","0","0","","mt1_008","False","False","","","","","","False","",""," "," "," "," "," "," "," "," "," "," ", 
+"2","A","0","16777215","4","0","0","0","false","true","false","false","mt1_001","O020209361","melamin","0", 
+"2","A","0","16777215","4","0","0","0","false","false","true","false","mt1_001","O020209361","melamin","0", 
+"2","A","0","16777215","4","0","0","0","true","false","false","false","mt1_001","O020209361","melamin","0", 
+
+"1","D","Pregrada1","9","0","578","18","-20","464","262","18","0","0","0","0","0","2"," ","false","true","16777215","false","0","širina/4-pregrada1.debljina/2","Pod.y+Pod.De","0-strop_nap","Strop.y-Pod.De-Pod.y","dubina-strop_nap-leða.debljina","","0","0","","mt1_009","False","False","","","","","","False","",""," "," "," "," "," "," "," "," "," "," ", 
+"2","A","0","16777215","4","0","0","0","false","false","true","false","mt1_008","O020209361","melamin","0", 
+
+"1","D","Pregrada2","9","0","1166","18","-20","464","262","18","0","0","0","0","0","2"," ","false","true","16777215","false","0","širina/2-pregrada2.debljina/2","Pod.y+Pod.De","0-strop_nap","Strop.y-Pod.De-Pod.y","dubina-leða.debljina-strop_nap","","0","0","","mt1_009","False","False","","","","","","False","",""," "," "," "," "," "," "," "," "," "," ", 
+"2","A","0","16777215","4","0","0","0","false","false","true","false","mt1_008","O020209361","melamin","0", 
+
+"1","D","Pregrada3","9","0","1754","18","-20","464","262","18","0","0","0","0","0","2"," ","false","true","16777215","false","0","3*širina/4-pregrada3.debljina/2","Pod.y+Pod.De","0-strop_nap","Strop.y-Pod.De-Pod.y","dubina-leða.debljina-strop_nap","","0","0","","mt1_009","False","False","","","","","","False","",""," "," "," "," "," "," "," "," "," "," ", 
+"2","A","0","16777215","4","0","0","0","false","false","true","false","mt1_008","O020209361","melamin","0", 
+
+"1","D","Lijeva Vrata145","8","0","3","3","-20","476","590","18","1","0","0","0","0","1"," ","false","true","16777215","false","1","Lijeva Stranica.X+3","Pod.y+3","","Strop.y+Strop.De-Pod.y-6-Strop.De","Pregrada1.x+Pregrada1.De-Lijeva Stranica.x-6","","0","0","","mt1_008","False","False","","","","","","False","",""," "," "," "," "," "," "," "," "," "," ", 
+"2","A","0","16777215","4","0","0","0","false","false","false","true","mt1_001","O020209361","melamin","0", 
+"2","A","0","16777215","4","0","0","0","true","false","false","false","mt1_001","O020209361","melamin","0", 
+"2","A","0","16777215","4","0","0","0","false","true","false","false","mt1_001","O020209361","melamin","0", 
+"2","A","0","16777215","4","0","0","0","false","false","true","false","mt1_001","O020209361","melamin","0", 
+
+"2","R","Ruèkica","1611","90","560","30","0","130","100","0","1","8","0","0","0","7"," ","false","true","8421504","false","0","Lijeva Vrata145.S-30","30","","","","","0","0","","ametal","False","False","","","","","","True","",""," "," "," "," "," "," "," "," "," "," ", 
+
+"1","D","Desna Vrata147","8","0","1757","3","-20","476","590","18","1","0","0","0","0","1"," ","false","true","16777215","false","2","Pregrada3.X+3","Pod.y+3","","Strop.y+Strop.De-Pod.y-6-Strop.De","Desna Stranica.x+Desna Stranica.De-Pregrada3.x-6","","0","0","","mt1_008","False","False","","","","","","False","",""," "," "," "," "," "," "," "," "," "," ", 
+"2","A","0","16777215","4","0","0","0","false","true","false","false","mt1_001","O020209361","melamin","0", 
+"2","A","0","16777215","4","0","0","0","false","false","false","true","mt1_001","O020209361","melamin","0", 
+"2","A","0","16777215","4","0","0","0","true","false","false","false","mt1_001","O020209361","melamin","0", 
+"2","A","0","16777215","4","0","0","0","false","false","true","false","mt1_001","O020209361","melamin","0", 
+
+"2","R","Ruèkica","1611","90","30","30","0","130","100","0","1","8","0","0","0","7"," ","false","true","8421504","false","0","30","30","","","","","0","0","","ametal","False","False","","","","","","True","",""," "," "," "," "," "," "," "," "," "," ", 
+
+"1","D","Polica1","9","0","596","232","-20","569","262","18","2","0","0","0","0","2"," ","false","true","16777215","false","0","Pregrada1.x+Pregrada1.De","visina/2-polica1.debljina","","Pregrada2.x-Pregrada1.De-Pregrada1.x-Polica_uza","0-Leða.z-Leða.De-20","","0","0","","mt1_009","False","False","","","","","","False","",""," "," "," "," "," "," "," "," "," "," ", 
+"2","A","0","16777215","4","0","0","0","false","false","true","false","mt1_008","O020209361","melamin","0", 
+
+"1","D","Polica2","9","0","1184","232","-20","569","262","18","2","0","0","0","0","2"," ","false","true","16777215","false","0","Pregrada2.x+Pregrada2.De","visina/2-polica2.debljina","","Pregrada3.x-Pregrada2.De-Pregrada2.x-Polica_uza","0-Leða.z-Leða.De-20","","0","0","","mt1_009","False","False","","","","","","False","",""," "," "," "," "," "," "," "," "," "," ", 
+"2","A","0","16777215","4","0","0","0","false","false","true","false","mt1_008","O020209361","melamin","0", 
+
+"0","E","Konzola1","","0","0","1500","300","500","300","18","2200","4","true",""," 0","0","0","169.224319458008","0","0","0","true","false","","","","","","","A33921","0","0","","","false","0","0","0","0","0","0","1","1","1","false","false","false","false","","","","","","","","","","","", 
+"1","VAR","RVARS=1",Polica_uza=1,
+"1","EFC","RVTOKLK=""""""Materijal"""","""""""","""""""","""""""",""""Prema tipu ploha u elementu"""""",""""""Korpus"""",""""kn"""",""""PT_BodySqr"""",""""45.50"""",""""Površina poda, bokova i ojaèanja"""""",""""""Fronte"""",""""kn"""",""""PT_FaceSqr"""",""""60.00"""",""""Površina fronti"""""",""""""Police"""",""""kn"""",""""PT_ShelSqr"""",""""45.50"""",""""Površina polica"""""",""""""Cokl"""",""""kn"""",""""PT_ToekSqr"""",""""45.50"""",""""Površina cokla"""""",""""""Radna_ploca"""",""""kn"""",""""PT_WorkTopSqr"""",""""130.00"""",""""Površina radne ploce"""""",""""""Ledja"""",""""kn"""",""""PT_BackSqr"""",""""30.00"""",""""Površina ledja"""""",""""""Okviri"""",""""kn"""",""""CB_BarLen"""",""""70.00"""",""""Dužina okvira na frontama s ukladama"""""",""""""Custom"""",""""kn"""",""""PT_CustSqr"""",""""120.00"""",""""Površina ploha tipa """"""""Custom"""""""""""""",""""""Usluge"""","""""""","""""""","""""""","""""""""",""""""Obrada_okvira"""",""""kn"""",""""CB_BarQty"""",""""20.00"""",""""Obrada okvira po komadu"""""",""""""Lakiranje_fronti"""",""""kn"""",""""PT_FaceSqr*_Lakiranje"""",""""500.00"""",""""Površina fronti"""""",""""""Bušenje_rupa"""",""""kn"""",""""CB_HoleQty"""",""""2.00"""",""""Broj rupa"""""",""""""Ugradnja_ladica"""",""""kn"""",""""CB_DrawQty"""",""""20.00"""",""""Broj ladica"""""",""""""Montaža"""",""""kn"""",""""_Montaza"""",""""50.00"""",""""Cijena jednog radnog sata""""""","RVARS=B=VISINA,L=ŠIRINA,D=DEBLJINA,_Montaza=1,_Lakiranje=1"
+"1","EEX","EATCAL=2",
+"1","D","Leða","8","0","0","0","-300","500","2200","18","1","0","0","0","0","8"," ","false","true","16777215","false","0","Lijeva Stranica.X","Pod.y","0-Dubina","Visina-Pod.y","Desna Stranica.X+Desna Stranica.Debljina-Lijeva Stranica.X","","0","0","","mt1_008","False","False","","","","","","False","",""," "," "," "," "," "," "," "," "," "," ", 
+"2","A","0","16777215","4","0","0","0","false","true","false","false","mt1_001","O020209361","melamin","0", 
+"2","A","0","16777215","4","0","0","0","false","false","false","true","mt1_001","O020209361","melamin","0", 
+"2","A","0","16777215","4","0","0","0","true","false","false","false","mt1_001","O020209361","melamin","0", 
+"2","A","0","16777215","4","0","0","0","false","false","true","false","mt1_001","O020209361","melamin","0", 
+
+"1","D","Lijeva Stranica","8","0","0","18","0","464","282","18","0","0","0","0","0","0"," ","false","true","16777215","false","0","","pod.debljina","","visina-pod.debljina-strop.debljina","0-Leða.z-leða.De","","0","0","","mt1_008","False","False","","","","","","False","",""," "," "," "," "," "," "," "," "," "," ", 
+"2","A","0","16777215","4","0","0","0","false","false","true","false","mt1_001","O020209361","melamin","0", 
+
+"1","D","Desna Stranica","8","0","2182","18","0","464","282","18","0","0","0","0","0","0"," ","false","true","16777215","false","0","Širina-Desna Stranica.DE","pod.debljina","","visina-pod.debljina-strop.debljina","0-Leða.z-leða.De","","0","0","","mt1_008","False","False","","","","","","False","",""," "," "," "," "," "," "," "," "," "," ", 
+"2","A","0","16777215","4","0","0","0","false","false","true","false","mt1_001","O020209361","melamin","0", 
+
+"1","D","Pod","8","0","0","0","0","2200","282","18","2","0","0","0","0","0"," ","false","true","16777215","false","0","0","","","širina","0-Leða.z-Leða.De","","0","0","","mt1_008","False","False","","","","","","False","",""," "," "," "," "," "," "," "," "," "," ", 
+"2","A","0","16777215","4","0","0","0","false","false","false","true","mt1_001","O020209361","melamin","0", 
+"2","A","0","16777215","4","0","0","0","false","true","false","false","mt1_001","O020209361","melamin","0", 
+"2","A","0","16777215","4","0","0","0","false","false","true","false","mt1_001","O020209361","melamin","0", 
+"2","A","0","16777215","4","0","0","0","true","false","false","false","mt1_001","O020209361","melamin","0", 
+
+"1","D","Strop","8","0","0","482","0","2200","282","18","2","0","0","0","0","0"," ","false","true","16777215","false","0","0","Visina-Strop.De","","širina","0-Leða.z-Leða.De","","0","0","","mt1_008","False","False","","","","","","False","",""," "," "," "," "," "," "," "," "," "," ", 
+"2","A","0","16777215","4","0","0","0","false","false","false","true","mt1_001","O020209361","melamin","0", 
+"2","A","0","16777215","4","0","0","0","false","true","false","false","mt1_001","O020209361","melamin","0", 
+"2","A","0","16777215","4","0","0","0","false","false","true","false","mt1_001","O020209361","melamin","0", 
+"2","A","0","16777215","4","0","0","0","true","false","false","false","mt1_001","O020209361","melamin","0", 
+
+"1","D","Pregrada1","9","0","541","18","0","464","282","18","0","0","0","0","0","2"," ","false","true","16777215","false","0","širina/4-pregrada1.debljina/2","Pod.y+Pod.De","","Strop.y-Pod.De-Pod.y","0-Leða.z-Leða.De","","0","0","","mt1_009","False","False","","","","","","False","",""," "," "," "," "," "," "," "," "," "," ", 
+"2","A","0","16777215","4","0","0","0","false","false","true","false","mt1_008","O020209361","melamin","0", 
+
+"1","D","Pregrada2","9","0","1091","18","0","464","282","18","0","0","0","0","0","2"," ","false","true","16777215","false","0","širina/2-pregrada2.debljina/2","Pod.y+Pod.De","","Strop.y-Pod.De-Pod.y","0-Leða.z-Leða.De","","0","0","","mt1_009","False","False","","","","","","False","",""," "," "," "," "," "," "," "," "," "," ", 
+"2","A","0","16777215","4","0","0","0","false","false","true","false","mt1_008","O020209361","melamin","0", 
+
+"1","D","Pregrada3","9","0","1641","18","0","464","282","18","0","0","0","0","0","2"," ","false","true","16777215","false","0","3*širina/4-pregrada3.debljina/2","Pod.y+Pod.De","","Strop.y-Pod.De-Pod.y","0-Leða.z-Leða.De","","0","0","","mt1_009","False","False","","","","","","False","",""," "," "," "," "," "," "," "," "," "," ", 
+"2","A","0","16777215","4","0","0","0","false","false","true","false","mt1_008","O020209361","melamin","0", 
+
+"0","E","Sjedalo","","0","4100","0","500","350","500","18","1000","2","true",""," 0","0","0","307.884307861328","0","0","0","true","false","","","","","","","A33921","0","0","","","false","0","0","0","0","0","0","1","1","1","false","false","false","false","","","","","","","","","","","", 
+"1","VAR","RVARS=10",visina_poda=100,Polica_uza=0,ledja_Z_pomak=10,ledja_LD_falc=0,ledja_pod_falc=0,ledja_gore_falc=0,strop_nap=60,visina_dolje=720,visina_gore=500,cokl_od_ruba=30,
+"1","EFC","RVTOKLK=""""""Materijal"""","""""""","""""""","""""""",""""Prema tipu ploha u elementu"""""",""""""Korpus"""",""""kn"""",""""PT_BodySqr"""",""""45.50"""",""""Površina poda, bokova i ojaèanja"""""",""""""Fronte"""",""""kn"""",""""PT_FaceSqr"""",""""60.00"""",""""Površina fronti"""""",""""""Police"""",""""kn"""",""""PT_ShelSqr"""",""""45.50"""",""""Površina polica"""""",""""""Cokl"""",""""kn"""",""""PT_ToekSqr"""",""""45.50"""",""""Površina cokla"""""",""""""Radna_ploca"""",""""kn"""",""""PT_WorkTopSqr"""",""""130.00"""",""""Površina radne ploce"""""",""""""Ledja"""",""""kn"""",""""PT_BackSqr"""",""""30.00"""",""""Površina ledja"""""",""""""Okviri"""",""""kn"""",""""CB_BarLen"""",""""70.00"""",""""Dužina okvira na frontama s ukladama"""""",""""""Custom"""",""""kn"""",""""PT_CustSqr"""",""""120.00"""",""""Površina ploha tipa """"""""Custom"""""""""""""",""""""Usluge"""","""""""","""""""","""""""","""""""""",""""""Obrada_okvira"""",""""kn"""",""""CB_BarQty"""",""""20.00"""",""""Obrada okvira po komadu"""""",""""""Lakiranje_fronti"""",""""kn"""",""""PT_FaceSqr*_Lakiranje"""",""""500.00"""",""""Površina fronti"""""",""""""Bušenje_rupa"""",""""kn"""",""""CB_HoleQty"""",""""2.00"""",""""Broj rupa"""""",""""""Ugradnja_ladica"""",""""kn"""",""""CB_DrawQty"""",""""20.00"""",""""Broj ladica"""""",""""""Montaža"""",""""kn"""",""""_Montaza"""",""""50.00"""",""""Cijena jednog radnog sata""""""","RVARS=B=VISINA,L=ŠIRINA,D=DEBLJINA,_Montaza=1,_Lakiranje=1"
+"1","EEX","EATCAL=2",
+"1","D","Leða","8","0","18","118","-490","214","964","20","1","0","0","0","0","8"," ","false","true","16777215","false","0","lijeva stranica.debljina-ledja_ld_falc","visina_poda+pod.debljina-ledja_pod_falc","0-dubina+ledja_z_pomak","visina-visina_poda-pod.debljina-strop.debljina+ledja_gore_falc","širina-lijeva stranica.debljina-desna stranica.debljina+2*ledja_ld_falc","","0","0","","mt1_008","False","False","","","","","","False","",""," "," "," "," "," "," "," "," "," "," ", 
+"2","A","1","16777215","10","93","Obukva7396","Drvene tiple - razne", 
+
+"1","D","Lijeva Stranica","8","0","0","100","0","232","500","18","0","0","0","0","0","0"," ","false","true","16777215","false","0","0","visina_poda","","visina-strop.debljina-visina_poda","dubina","","0","0","","mt1_008","False","False","","","","","","False","",""," "," "," "," "," "," "," "," "," "," ", 
+"2","A","0","16777215","4","0","0","0","false","false","true","false","mt1_001","O020209361","melamin","0", 
+"2","A","0","16777215","4","0","0","0","false","true","false","false","mt1_001","O020209361","melamin","0", 
+"2","A","0","16777215","4","0","0","0","false","false","false","true","mt1_001","O020209361","melamin","0", 
+"2","A","0","16777215","4","0","0","0","true","false","false","false","mt1_001","O020209361","melamin","0", 
+
+"1","D","Desna Stranica","8","0","982","100","0","232","500","18","0","0","0","0","0","0"," ","false","true","16777215","false","0","širina-desna stranica.de","visina_poda","0","visina-strop.debljina-visina_poda","dubina","","0","0","","mt1_008","False","False","","","","","","False","",""," "," "," "," "," "," "," "," "," "," ", 
+"2","A","0","16777215","4","0","0","0","false","false","true","false","mt1_001","O020209361","melamin","0", 
+"2","A","0","16777215","4","0","0","0","false","true","false","false","mt1_001","O020209361","melamin","0", 
+"2","A","0","16777215","4","0","0","0","false","false","false","true","mt1_001","O020209361","melamin","0", 
+"2","A","0","16777215","4","0","0","0","true","false","false","false","mt1_001","O020209361","melamin","0", 
+
+"1","D","Pod","8","0","18","100","0","964","500","18","2","0","0","0","0","0"," ","false","true","16777215","false","0","lijeva stranica.debljina","visina_poda","0","širina-lijeva stranica.debljina-desna stranica.debljina","dubina","","0","0","","mt1_008","False","False","","","","","","False","",""," "," "," "," "," "," "," "," "," "," ", 
+"2","A","0","16777215","4","0","0","0","false","false","false","true","mt1_001","O020209361","melamin","0", 
+"2","A","0","16777215","4","0","0","0","false","false","true","false","mt1_001","O020209361","melamin","0", 
+
+"1","D","Strop","8","0","0","332","60","1000","560","18","2","0","0","0","0","0"," ","false","true","16777215","false","0","0","Visina-Strop.De","strop_nap","širina","dubina+strop_nap","","0","0","","mt1_008","False","False","","","","","","False","",""," "," "," "," "," "," "," "," "," "," ", 
+"2","A","0","16777215","1","0","0","0","true","false","false","false","mt1_001","O21813","ABS 1mm","1", 
+"2","A","0","16777215","1","0","0","0","false","true","false","false","mt1_001","O21813","ABS 1mm","1", 
+"2","A","0","16777215","1","0","0","0","false","false","false","true","mt1_001","O21813","ABS 1mm","1", 
+"2","A","0","16777215","1","0","0","0","false","false","true","false","mt1_001","O21813","ABS 1mm","1", 
+"2","A","1","16777215","25","93","Obukva7396","Drvene tiple - razne", 
+"2","A","1","16777215","1","136","OSPAX-6688","Iver vij.upuš.gl.polu navoj bij.pocin.", 
+
+"1","D","Cokl_N","8","0","30","0","-48","100","940","18","1","0","0","0","0","3"," ","false","true","16777215","false","0","cokl_od_ruba","0","0-cokl_n.debljina-cokl_od_ruba","Pod.y","širina-2*cokl_od_ruba","","0","0","","mt1_008","False","True","","","","","","False","",""," "," "," "," "," "," "," "," "," "," ", 
+"2","A","0","16777215","4","0","0","0","false","false","true","false","mt1_001","O020209361","melamin","0", 
+"2","A","0","16777215","4","0","0","0","false","false","false","true","mt1_001","O020209361","melamin","0", 
+"2","A","0","16777215","4","0","0","0","true","false","false","false","mt1_001","O020209361","melamin","0", 
+
+"1","D","Nogica","0","0","80","0","-80","100","50","18","0","0","0","0","0","5"," ","false","true","16777215","false","0","cokl_od_ruba+nogica.širina","0","0-cokl_od_ruba-nogica.širina","visina_poda","","","0","0","","_0","False","False","","","","","","False","",""," "," "," "," "," "," "," "," "," "," ", 
+
+"1","D","Nogica0","0","0","920","0","-80","100","50","18","0","0","0","0","0","5"," ","false","true","16777215","false","0","širina-cokl_od_ruba-nogica0.širina","","0-cokl_od_ruba-nogica0.širina","visina_poda","","","0","0","","_0","False","False","","","","","","False","",""," "," "," "," "," "," "," "," "," "," ", 
+
+"1","D","Nogica1","0","0","80","0","-420","100","50","18","0","0","0","0","0","5"," ","false","true","16777215","false","0","cokl_od_ruba+nogica1.širina","","0-dubina+cokl_od_ruba+nogica1.širina","visina_poda","","","0","0","","_0","False","False","","","","","","False","",""," "," "," "," "," "," "," "," "," "," ", 
+
+"1","D","Nogica2","0","0","920","0","-420","100","50","18","0","0","0","0","0","5"," ","false","true","16777215","false","0","širina-cokl_od_ruba-nogica2.širina","","0-dubina+cokl_od_ruba+nogica2.širina","visina_poda","","","0","0","","_0","False","False","","","","","","False","",""," "," "," "," "," "," "," "," "," "," ", 
+
+"1","D","Cokl_L","8","0","30","0","-48","100","452","18","0","0","0","0","0","3"," ","false","true","16777215","false","0","cokl_od_ruba","","0-cokl_od_ruba-cokl_n.debljina","","dubina-cokl_od_ruba-cokl_n.debljina","","0","0","","mt1_008","False","True","","","","","","False","",""," "," "," "," "," "," "," "," "," "," ", 
+"2","A","0","16777215","4","0","0","0","false","false","true","false","mt1_001","O020209361","melamin","0", 
+"2","A","0","16777215","4","0","0","0","false","false","false","true","mt1_001","O020209361","melamin","0", 
+"2","A","0","16777215","4","0","0","0","true","false","false","false","mt1_001","O020209361","melamin","0", 
+
+"1","D","Cokl_D","8","0","952","0","-48","100","452","18","0","0","0","0","0","3"," ","false","true","16777215","false","0","širina-cokl_od_ruba-cokl_d.debljina","","0-cokl_od_ruba-cokl_n.debljina","","dubina-cokl_od_ruba-cokl_n.debljina","","0","0","","mt1_008","False","True","","","","","","False","",""," "," "," "," "," "," "," "," "," "," ", 
+"2","A","0","16777215","4","0","0","0","false","false","true","false","mt1_001","O020209361","melamin","0", 
+"2","A","0","16777215","4","0","0","0","false","false","false","true","mt1_001","O020209361","melamin","0", 
+"2","A","0","16777215","4","0","0","0","true","false","false","false","mt1_001","O020209361","melamin","0", 
+
+"1","D","Pregrada","9","0","491","118","0","214","470","18","0","0","0","0","0","2"," ","false","true","16777215","false","0","širina/2-pregrada.debljina/2","Pod.y+Pod.De","","Strop.y-Pod.De-Pod.y","0-Leða.z-Leða.De","","0","0","","mt1_009","False","False","","","","","","False","",""," "," "," "," "," "," "," "," "," "," ", 
+"2","A","0","16777215","4","0","0","0","false","false","true","false","mt1_008","O020209361","melamin","0", 
+
+"1","D","Lijeva Vrata127","8","0","3","103","0","226","494","18","1","0","0","0","0","1"," ","false","true","16777215","false","1","Lijeva Stranica.X+3","Pod.y+3","","Strop.y+Strop.De-Pod.y-6-Strop.De","((Desna Stranica.x+Desna Stranica.De-Lijeva Stranica.x)/2)-6","","0","0","","mt1_008","False","False","","","","","","False","",""," "," "," "," "," "," "," "," "," "," ", 
+"2","A","0","16777215","4","0","0","0","true","false","false","false","mt1_001","O020209361","melamin","0", 
+"2","A","0","16777215","4","0","0","0","false","true","false","false","mt1_001","O020209361","melamin","0", 
+"2","A","0","16777215","4","0","0","0","false","false","true","false","mt1_001","O020209361","melamin","0", 
+"2","A","0","16777215","4","0","0","0","false","false","false","true","mt1_001","O020209361","melamin","0", 
+
+"2","R","Ruèkica","1611","0","344","176","0","100","100","0","1","8","0","0","0","7"," ","false","true","8421504","false","0","Lijeva Vrata127.S-150","Lijeva Vrata127.V-50","","","","","0","0","","ametal","False","False","","","","","","True","",""," "," "," "," "," "," "," "," "," "," ", 
+
+"1","D","Desna Vrata130","8","0","503","103","0","226","494","18","1","0","0","0","0","1"," ","false","true","16777215","false","2","((Desna Stranica.x+Desna Stranica.De-Lijeva Stranica.x)/2)+3","Pod.y+3","","Strop.y+Strop.De-Pod.y-6-Strop.De","((Desna Stranica.x+Desna Stranica.De-Lijeva Stranica.x)/2)-6","","0","0","","mt1_008","False","False","","","","","","False","",""," "," "," "," "," "," "," "," "," "," ", 
+"2","A","0","16777215","4","0","0","0","true","false","false","false","mt1_001","O020209361","melamin","0", 
+"2","A","0","16777215","4","0","0","0","false","true","false","false","mt1_001","O020209361","melamin","0", 
+"2","A","0","16777215","4","0","0","0","false","false","true","false","mt1_001","O020209361","melamin","0", 
+"2","A","0","16777215","4","0","0","0","false","false","false","true","mt1_001","O020209361","melamin","0", 
+
+"2","R","Ruèkica","1611","0","50","176","0","100","100","0","1","8","0","0","0","7"," ","false","true","8421504","false","0","50","Lijeva Vrata127.V-50","","","","","0","0","","ametal","False","False","","","","","","True","",""," "," "," "," "," "," "," "," "," "," ", 
+
+"1","E","rbox","","0","0","350","60","50","560","18","1000","2","true",""," 0","0","0","0","0","0","0","true","false","0","visina","0+strop_nap","","širina","dubina+strop_nap","A33921","0","0","","","false","0","0","0","0","0","0","1","1","1","false","false","false","false","","","","","","","","","","","", 
+"2","VAR","RVARS=1",rez=50,
+"2","EFC","RVTOKLK=""""""Materijal"""","""""""","""""""","""""""",""""Prema tipu ploha u elementu"""""",""""""Korpus"""",""""kn"""",""""PT_BodySqr"""",""""45.50"""",""""Površina poda, bokova i ojaèanja"""""",""""""Fronte"""",""""kn"""",""""PT_FaceSqr"""",""""60.00"""",""""Površina fronti"""""",""""""Police"""",""""kn"""",""""PT_ShelSqr"""",""""45.50"""",""""Površina polica"""""",""""""Cokl"""",""""kn"""",""""PT_ToekSqr"""",""""45.50"""",""""Površina cokla"""""",""""""Radna_ploca"""",""""kn"""",""""PT_WorkTopSqr"""",""""130.00"""",""""Površina radne ploce"""""",""""""Ledja"""",""""kn"""",""""PT_BackSqr"""",""""30.00"""",""""Površina ledja"""""",""""""Okviri"""",""""kn"""",""""CB_BarLen"""",""""70.00"""",""""Dužina okvira na frontama s ukladama"""""",""""""Custom"""",""""kn"""",""""PT_CustSqr"""",""""120.00"""",""""Površina ploha tipa """"""""Custom"""""""""""""",""""""Usluge"""","""""""","""""""","""""""","""""""""",""""""Obrada_okvira"""",""""kn"""",""""CB_BarQty"""",""""20.00"""",""""Obrada okvira po komadu"""""",""""""Lakiranje_fronti"""",""""kn"""",""""PT_FaceSqr*_Lakiranje"""",""""500.00"""",""""Površina fronti"""""",""""""Bušenje_rupa"""",""""kn"""",""""CB_HoleQty"""",""""2.00"""",""""Broj rupa"""""",""""""Ugradnja_ladica"""",""""kn"""",""""CB_DrawQty"""",""""20.00"""",""""Broj ladica"""""",""""""Montaža"""",""""kn"""",""""_Montaza"""",""""50.00"""",""""Cijena jednog radnog sata""""""","RVARS=B=VISINA,L=ŠIRINA,D=DEBLJINA,_Montaza=1,_Lakiranje=1"
+"2","EEX","EATCAL=1",
+"2","D","ZZ","1867","0","50","0","-560","25","900","1","1","0","0","0","0","0"," ","true","true","16777215","false","5","0+rez","0","0-dubina","v-rez/2","s-2*rez","","0","0","","ZP_b21","False","False","","","","","","False","",""," "," "," "," "," "," "," "," "," "," ", 
+
+"2","D","LL","1867","0","0","0","-50","25","460","1","0","0","0","0","0","0"," ","true","true","16777215","false","0","0","0","0-rez","v-rez/2","d-2*rez","","0","0","","ZP_b21","False","False","","","","","","False","",""," "," "," "," "," "," "," "," "," "," ", 
+
+"2","D","DD","1867","0","1000","0","-50","25","460","1","0","0","0","0","0","0"," ","true","true","16777215","false","0","s-desna.debljina","0","0-rez","v-rez/2","d-2*rez","","0","0","","ZP_b21","False","False","","","","","","False","",""," "," "," "," "," "," "," "," "," "," ", 
+
+"2","D","Doljnja","1867","0","0","0","0","1000","560","1","2","0","0","0","0","0"," ","true","true","16777215","false","0","0","0","0","s-lijeva.debljina-desna.debljina","d-prednja.debljina","","0","0","","ZP_b21","False","False","","","","","","False","",""," "," "," "," "," "," "," "," "," "," ", 
+"3","P","1","50","0","50","0","300","0","1", 
+"3","P","1","50","0","50","0","300","2","1", 
+"3","P","1","50","0","50","0","300","4","1", 
+"3","P","1","50","0","50","0","300","6","1", 
+"2","D","PP","1867","0","50","0","0","25","900","1","1","0","0","0","0","0"," ","true","true","16777215","false","0","0+rez","0","0-prednja.debljina","v-rez/2","s-2*rez","","0","0","","ZP_b21","False","False","","","","","","False","",""," "," "," "," "," "," "," "," "," "," ", 
+
+"2","D","PL","1867","-45","0","0","-50","25","71","1","1","0","0","0","0","0"," ","true","true","16777215","false","0","0,5","0","0-rez","v-rez/2","sqrt(2*sqr(rez))","","0","0","","ZP_b21","False","False","","","","","","False","",""," "," "," "," "," "," "," "," "," "," ", 
+
+"2","D","PD","1867","45","950","0","0","25","71","1","1","0","0","0","0","0"," ","true","true","16777215","false","0","0+rez+pp.s","0","0-prednja.debljina","v-rez/2","sqrt(2*sqr(rez))","","0","0","","ZP_b21","False","False","","","","","","False","",""," "," "," "," "," "," "," "," "," "," ", 
+
+"2","D","ZL","1867","45","0","0","-510","25","71","1","1","0","0","0","0","0"," ","true","true","16777215","false","0","0,5","0","0-dubina+rez","v-rez/2","sqrt(2*sqr(rez))","","0","0","","ZP_b21","False","False","","","","","","False","",""," "," "," "," "," "," "," "," "," "," ", 
+
+"2","D","ZD","1867","-45","950","0","-560","25","71","1","1","0","0","0","0","0"," ","true","true","16777215","false","0","0+rez+pp.s","0","0-dubina","v-rez/2","sqrt(2*sqr(rez))","","0","0","","ZP_b21","False","False","","","","","","False","",""," "," "," "," "," "," "," "," "," "," ", 
+
+"2","D","Gore","1867","0","25","50","-25","950","510","1","2","0","0","0","0","0"," ","true","true","16777215","false","0","rez/2","visina","0-rez/2","s-lijeva.debljina-desna.debljina-rez","d-prednja.debljina-rez","","0","0","","ZP_b21","False","False","","","","","","False","",""," "," "," "," "," "," "," "," "," "," ", 
+"3","P","1","36","0","36","0","300","0","1", 
+"3","P","1","36","0","36","0","300","2","1", 
+"3","P","1","36","0","36","0","300","4","1", 
+"3","P","1","36","0","36","0","300","6","1", 
+"2","D","Kosi_4","1867","0","50","25","-560","36","900","1","1","0","0","0","0","0"," ","true","true","16777215","false","5","0+rez","visina-rez/2","0-dubina","36","s-2*rez","","45","0","","ZP_b21","False","False","","","","","","False","",""," "," "," "," "," "," "," "," "," "," ", 
+"3","P","1","36","0","11","0","300","2","1", 
+"3","P","1","11","0","36","0","300","4","1", 
+"2","D","Kosi_1","1867","0","50","25","0","36","900","1","1","0","0","0","0","0"," ","true","true","16777215","false","0","0+rez","visina-rez/2","0-prednja.debljina","36","s-2*rez","","315","0","","ZP_b21","False","False","","","","","","False","",""," "," "," "," "," "," "," "," "," "," ", 
+"3","P","1","36","0","10","0","300","2","1", 
+"3","P","1","10","0","36","0","300","4","1", 
+"2","D","Kosi_2","1867","-45","0","25","-50","36","71","1","1","0","0","0","0","0"," ","true","true","16777215","false","0","0,5","visina-rez/2","0-rez","36","sqrt(2*sqr(rez))","","315","0","","ZP_b21","False","False","","","","","","False","",""," "," "," "," "," "," "," "," "," "," ", 
+"3","P","1","11","0","36","0","300","4","1", 
+"3","P","1","36","0","11","0","300","2","1", 
+"2","D","Kosi_3","1867","0","0","25","-50","36","460","1","0","0","0","0","0","0"," ","true","true","16777215","false","0","0","visina-rez/2","0-rez","36","d-2*rez","","0","315","","ZP_b21","False","False","","","","","","False","",""," "," "," "," "," "," "," "," "," "," ", 
+"3","P","1","36","0","11","0","300","2","1", 
+"3","P","1","12","0","36","0","300","4","1", 
+"2","D","Kosi_5","1867","45","950","25","0","36","71","1","1","0","0","0","0","0"," ","true","true","16777215","false","0","0+rez+pp.s","visina-rez/2","0-prednja.debljina","36","sqrt(2*sqr(rez))","","315","0","","ZP_b21","False","False","","","","","","False","",""," "," "," "," "," "," "," "," "," "," ", 
+"3","P","1","36","0","10","0","300","2","1", 
+"3","P","1","11","0","36","0","300","4","1", 
+"2","D","Kosi_6","1867","0","1000","25","-50","36","460","1","0","0","0","0","0","0"," ","true","true","16777215","false","0","s-desna.debljina","visina-rez/2","0-rez","36","d-2*rez","","0","45","","ZP_b21","False","False","","","","","","False","",""," "," "," "," "," "," "," "," "," "," ", 
+"3","P","1","36","0","11","0","300","2","1", 
+"3","P","1","12","0","36","0","300","4","1", 
+"2","D","Kosi_7","1867","-45","950","25","-560","36","71","1","1","0","0","0","0","0"," ","true","true","16777215","false","0","0+rez+pp.s","visina-rez/2","0-dubina","36","sqrt(2*sqr(rez))","","45","0","","ZP_b21","False","False","","","","","","False","",""," "," "," "," "," "," "," "," "," "," ", 
+"3","P","1","11","0","36","0","300","4","1", 
+"3","P","1","36","0","11","0","300","2","1", 
+"2","D","Kosi_8","1867","45","0","25","-510","36","71","1","1","0","0","0","0","0"," ","true","true","16777215","false","0","0,5","visina-rez/2","0-dubina+rez","36","sqrt(2*sqr(rez))","","45","0","","ZP_b21","False","False","","","","","","False","",""," "," "," "," "," "," "," "," "," "," ", 
+"3","P","1","11","0","36","0","300","4","1", 
+"3","P","1","36","0","11","0","71","2","1", 
+"0","E","vjesalica","","0","4100","0","550","2000","550","18","1000","4","true",""," 0","0","0","151.891845703125","0","0","0","true","false","","","","","","","A33921","0","0","","","false","0","0","0","0","0","0","1","1","1","false","false","false","false","","","","","","","","","","","", 
+"1","VAR","RVARS=2",Polica_od_stropa=300,polica_unutra=300,
+"1","EFC","RVTOKLK=""""""Materijal"""","""""""","""""""","""""""",""""Prema tipu ploha u elementu"""""",""""""Korpus"""",""""kn"""",""""PT_BodySqr"""",""""45.50"""",""""Površina poda, bokova i ojaèanja"""""",""""""Fronte"""",""""kn"""",""""PT_FaceSqr"""",""""60.00"""",""""Površina fronti"""""",""""""Police"""",""""kn"""",""""PT_ShelSqr"""",""""45.50"""",""""Površina polica"""""",""""""Cokl"""",""""kn"""",""""PT_ToekSqr"""",""""45.50"""",""""Površina cokla"""""",""""""Radna_ploca"""",""""kn"""",""""PT_WorkTopSqr"""",""""130.00"""",""""Površina radne ploce"""""",""""""Ledja"""",""""kn"""",""""PT_BackSqr"""",""""30.00"""",""""Površina ledja"""""",""""""Okviri"""",""""kn"""",""""CB_BarLen"""",""""70.00"""",""""Dužina okvira na frontama s ukladama"""""",""""""Custom"""",""""kn"""",""""PT_CustSqr"""",""""120.00"""",""""Površina ploha tipa """"""""Custom"""""""""""""",""""""Usluge"""","""""""","""""""","""""""","""""""""",""""""Obrada_okvira"""",""""kn"""",""""CB_BarQty"""",""""20.00"""",""""Obrada okvira po komadu"""""",""""""Lakiranje_fronti"""",""""kn"""",""""PT_FaceSqr*_Lakiranje"""",""""500.00"""",""""Površina fronti"""""",""""""Bušenje_rupa"""",""""kn"""",""""CB_HoleQty"""",""""2.00"""",""""Broj rupa"""""",""""""Ugradnja_ladica"""",""""kn"""",""""CB_DrawQty"""",""""20.00"""",""""Broj ladica"""""",""""""Montaža"""",""""kn"""",""""_Montaza"""",""""50.00"""",""""Cijena jednog radnog sata""""""","RVARS=B=VISINA,L=ŠIRINA,D=DEBLJINA,_Montaza=1,_Lakiranje=1"
+"1","EEX","EATCAL=2",
+"1","D","Leða","8","0","0","0","-550","2000","1000","18","1","0","0","0","0","8"," ","false","true","16777215","false","0","","","0-Dubina","visina","širina","","0","0","","mt1_008","False","False","","","","","","False","",""," "," "," "," "," "," "," "," "," "," ", 
+"2","A","0","16777215","4","0","0","0","false","false","false","true","mt1_001","O020209361","melamin","0", 
+"2","A","0","16777215","4","0","0","0","true","false","false","false","mt1_001","O020209361","melamin","0", 
+"2","A","0","16777215","4","0","0","0","false","false","true","false","mt1_001","O020209361","melamin","0", 
+"2","A","0","16777215","4","0","0","0","false","true","false","false","mt1_001","O020209361","melamin","0", 
+
+"1","D","Strop","8","0","0","1982","0","1000","532","18","2","0","0","0","0","0"," ","false","true","16777215","false","0","0","visina-strop.debljina","0","širina","dubina-leða.debljina","","0","0","","mt1_008","False","False","","","","","","False","",""," "," "," "," "," "," "," "," "," "," ", 
+"2","A","0","16777215","4","0","0","0","true","false","false","false","mt1_001","O020209361","melamin","0", 
+"2","A","0","16777215","4","0","0","0","false","true","false","false","mt1_001","O020209361","melamin","0", 
+"2","A","0","16777215","4","0","0","0","false","false","true","false","mt1_001","O020209361","melamin","0", 
+
+"1","D","Polica14","9","0","0","1664","-300","1000","232","18","2","0","0","0","0","2"," ","false","true","16777215","false","0","0","visina-strop.debljina-polica14.debljina-polica_od_stropa","0-polica_unutra","širina","dubina-leða.debljina-polica_unutra","","0","0","","mt1_009","False","False","","","","","","False","",""," "," "," "," "," "," "," "," "," "," ", 
+"2","A","0","16777215","4","0","0","0","false","true","false","false","mt1_008","O020209361","melamin","0", 
+"2","A","0","16777215","4","0","0","0","true","false","false","false","mt1_008","O020209361","melamin","0", 
+"2","A","0","16777215","4","0","0","0","false","false","true","false","mt1_008","O020209361","melamin","0", 
+
+"1","D","Lijevi_bok","9","0","0","1682","-300","300","232","18","0","0","0","0","0","2"," ","false","true","16777215","false","0","0","Polica14.y+Polica14.De","0-polica_unutra","Strop.y-Polica14.De-Polica14.y","dubina-leða.debljina-polica_unutra","","0","0","","mt1_009","False","False","","","","","","False","",""," "," "," "," "," "," "," "," "," "," ", 
+"2","A","0","16777215","4","0","0","0","false","false","true","false","mt1_008","O020209361","melamin","0", 
+
+"1","D","Desni_bok","9","0","982","1682","-300","300","232","18","0","0","0","0","0","2"," ","false","true","16777215","false","0","širina-desni_bok.debljina","Polica14.y+Polica14.De","0-polica_unutra","Strop.y-Polica14.De-Polica14.y","dubina-leða.debljina-polica_unutra","","0","0","","mt1_009","False","False","","","","","","False","",""," "," "," "," "," "," "," "," "," "," ", 
+"2","A","0","16777215","4","0","0","0","false","false","true","false","mt1_008","O020209361","melamin","0", 
+
+"1","D","Kukica","1914","0","167","1514","-497","100","35","18","0","0","0","0","0","2"," ","true","true","16777215","false","0","1*širina/6","polica14.y-150","0-dubina+leða.debljina+kukica.širina","100","35","","0","0","","ZP_b68","False","False","","","","","","False","",""," "," "," "," "," "," "," "," "," "," ", 
+"2","P","1","150","0","-50","0","30","4","0", 
+"2","P","1","35","0","100","0","10","0","1", 
+"2","P","1","35","20","80","4","300","5","1", 
+"1","D","Kukica2","1914","0","333","1514","-497","100","35","18","0","0","0","0","0","2"," ","true","true","16777215","false","0","2*širina/6","polica14.y-150","0-dubina+leða.debljina+kukica.širina","100","35","","0","0","","ZP_b68","False","False","","","","","","False","",""," "," "," "," "," "," "," "," "," "," ", 
+"2","P","1","150","0","-50","0","30","4","0", 
+"2","P","1","35","0","100","0","10","0","1", 
+"2","P","1","35","20","80","4","300","5","1", 
+"1","D","Kukica3","1914","0","500","1514","-497","100","35","18","0","0","0","0","0","2"," ","true","true","16777215","false","0","3*širina/6","polica14.y-150","0-dubina+leða.debljina+kukica.širina","100","35","","0","0","","ZP_b68","False","False","","","","","","False","",""," "," "," "," "," "," "," "," "," "," ", 
+"2","P","1","150","0","-50","0","30","4","0", 
+"2","P","1","35","0","100","0","10","0","1", 
+"2","P","1","35","20","80","4","300","5","1", 
+"1","D","Kukica4","1914","0","667","1514","-497","100","35","18","0","0","0","0","0","2"," ","true","true","16777215","false","0","4*širina/6","polica14.y-150","0-dubina+leða.debljina+kukica.širina","100","35","","0","0","","ZP_b68","False","False","","","","","","False","",""," "," "," "," "," "," "," "," "," "," ", 
+"2","P","1","150","0","-50","0","30","4","0", 
+"2","P","1","35","0","100","0","10","0","1", 
+"2","P","1","35","20","80","4","300","5","1", 
+"1","D","Kukica5","1914","0","833","1514","-497","100","35","18","0","0","0","0","0","2"," ","true","true","16777215","false","0","5*širina/6","polica14.y-150","0-dubina+leða.debljina+kukica.širina","100","35","","0","0","","ZP_b68","False","False","","","","","","False","",""," "," "," "," "," "," "," "," "," "," ", 
+"2","P","1","150","0","-50","0","30","4","0", 
+"2","P","1","35","0","100","0","10","0","1", 
+"2","P","1","35","20","80","4","300","5","1", 
+"0","E","Krevet2","","90","2200","0","1200","800","2200","18","1200","2","true",""," 0","0","0","1319.43811035156","0","0","0","true","false","","","","","","","A33921","0","0","","","false","0","0","0","0","0","0","1","1","1","false","false","false","false","","","","","","","","","","","", 
+"1","VAR","RVARS=4",visina_poda=200,sirina_boka=200,sirina_ojacanja=80,skriveno=50,
+"1","EFC","RVTOKLK=""""""Materijal"""","""""""","""""""","""""""",""""Prema tipu ploha u elementu"""""",""""""Korpus"""",""""kn"""",""""PT_BodySqr"""",""""45.50"""",""""Površina poda, bokova i ojaèanja"""""",""""""Fronte"""",""""kn"""",""""PT_FaceSqr"""",""""60.00"""",""""Površina fronti"""""",""""""Police"""",""""kn"""",""""PT_ShelSqr"""",""""45.50"""",""""Površina polica"""""",""""""Cokl"""",""""kn"""",""""PT_ToekSqr"""",""""45.50"""",""""Površina cokla"""""",""""""Radna_ploca"""",""""kn"""",""""PT_WorkTopSqr"""",""""130.00"""",""""Površina radne ploce"""""",""""""Ledja"""",""""kn"""",""""PT_BackSqr"""",""""30.00"""",""""Površina ledja"""""",""""""Okviri"""",""""kn"""",""""CB_BarLen"""",""""70.00"""",""""Dužina okvira na frontama s ukladama"""""",""""""Custom"""",""""kn"""",""""PT_CustSqr"""",""""120.00"""",""""Površina ploha tipa """"""""Custom"""""""""""""",""""""Usluge"""","""""""","""""""","""""""","""""""""",""""""Obrada_okvira"""",""""kn"""",""""CB_BarQty"""",""""20.00"""",""""Obrada okvira po komadu"""""",""""""Lakiranje_fronti"""",""""kn"""",""""PT_FaceSqr*_Lakiranje"""",""""500.00"""",""""Površina fronti"""""",""""""Bušenje_rupa"""",""""kn"""",""""CB_HoleQty"""",""""2.00"""",""""Broj rupa"""""",""""""Ugradnja_ladica"""",""""kn"""",""""CB_DrawQty"""",""""20.00"""",""""Broj ladica"""""",""""""Montaža"""",""""kn"""",""""_Montaza"""",""""50.00"""",""""Cijena jednog radnog sata""""""","RVARS=B=VISINA,L=ŠIRINA,D=DEBLJINA,_Montaza=1,_Lakiranje=1"
+"1","EEX","EATCAL=2",
+"1","D","Leða","8","0","0","0","-2200","800","1200","25","1","0","0","0","0","1"," ","false","true","16777215","false","0","Lijeva Stranica.X","0","0-Dubina","visina","Desna Stranica.X+Desna Stranica.Debljina-Lijeva Stranica.X","","0","0","","mt1_008","False","False","","","","","","False","",""," "," "," "," "," "," "," "," "," "," ", 
+"2","A","0","16777215","1","0","0","0","false","false","true","false","mt1_001","O21813","ABS 1mm","1", 
+"2","A","0","16777215","1","0","0","0","true","false","false","false","mt1_001","O21813","ABS 1mm","1", 
+"2","A","0","16777215","1","0","0","0","false","false","false","true","mt1_001","O21813","ABS 1mm","1", 
+"2","A","0","16777215","1","0","0","0","false","true","false","false","mt1_001","O21813","ABS 1mm","1", 
+"2","A","1","16777215","10","93","Obukva7396","Drvene tiple - razne", 
+
+"1","D","Lijeva Stranica","8","0","0","150","-25","200","2150","18","0","0","0","0","0","0"," ","false","true","16777215","false","0","","visina_poda-skriveno","0-prednja.debljina","sirina_boka","dubina-prednja.debljina-leða.debljina","","0","0","","mt1_008","False","True","","","","","","False","",""," "," "," "," "," "," "," "," "," "," ", 
+"2","A","0","16777215","1","0","0","0","false","true","false","false","mt1_001","O21813","ABS 1mm","1", 
+"2","A","0","16777215","1","0","0","0","true","false","false","false","mt1_001","O21813","ABS 1mm","1", 
+
+"1","D","Desna Stranica","8","0","1182","150","-25","200","2150","18","0","0","0","0","0","0"," ","false","true","16777215","false","0","Širina-Desna Stranica.DE","visina_poda-skriveno","0-prednja.debljina","sirina_boka","dubina-prednja.debljina-leða.debljina","","0","0","","mt1_008","False","True","","","","","","False","",""," "," "," "," "," "," "," "," "," "," ", 
+"2","A","0","16777215","4","0","0","0","false","true","false","false","mt1_001","O020209361","melamin","0", 
+"2","A","0","16777215","4","0","0","0","true","false","false","false","mt1_001","O020209361","melamin","0", 
+
+"1","D","Pod","8","0","18","218","-25","1164","2150","18","2","0","0","0","0","0"," ","false","true","16777215","false","0","Lijeva Stranica.Debljina+Lijeva Stranica.X","visina_poda+ojacanje1.debljina","0-prednja.debljina","Desna Stranica.X-Lijeva Stranica.X-Lijeva Stranica.Debljina","dubina-prednja.debljina-leða.debljina","","0","0","","mt1_008","False","True","","","","","","False","",""," "," "," "," "," "," "," "," "," "," ", 
+
+"1","D","Prednja","8","0","0","150","-25","200","1200","25","1","0","0","0","0","1"," ","false","true","16777215","false","0","Lijeva Stranica.X","visina_poda-skriveno","0-prednja.debljina","sirina_boka","Desna Stranica.X+Desna Stranica.Debljina-Lijeva Stranica.X","","0","0","","mt1_008","False","True","","","","","","False","",""," "," "," "," "," "," "," "," "," "," ", 
+"2","A","0","16777215","4","0","0","0","false","false","true","false","mt1_001","O020209361","melamin","0", 
+"2","A","0","16777215","4","0","0","0","false","true","false","false","mt1_001","O020209361","melamin","0", 
+"2","A","0","16777215","4","0","0","0","false","false","false","true","mt1_001","O020209361","melamin","0", 
+"2","A","0","16777215","4","0","0","0","true","false","false","false","mt1_001","O020209361","melamin","0", 
+"2","A","1","16777215","10","93","Obukva7396","Drvene tiple - razne", 
+
+"1","D","ojacanje1","8","0","18","200","-50","1164","80","18","2","0","0","0","0","0"," ","false","true","16777215","false","0","Lijeva Stranica.Debljina+Lijeva Stranica.X","visina_poda","0-prednja.debljina-prednja_noga.debljina","Desna Stranica.X-Lijeva Stranica.X-Lijeva Stranica.Debljina","sirina_ojacanja","","0","0","","mt1_008","False","False","","","","","","False","",""," "," "," "," "," "," "," "," "," "," ", 
+"2","A","0","16777215","4","0","0","0","false","false","true","false","mt1_001","O020209361","melamin","0", 
+
+"1","D","ojacanje2","8","0","18","200","-535","1164","80","18","2","0","0","0","0","0"," ","false","true","16777215","false","0","Lijeva Stranica.Debljina+Lijeva Stranica.X","visina_poda","0-prednja.debljina-(dubina/4)+ojacanje2.širina/2","Desna Stranica.X-Lijeva Stranica.X-Lijeva Stranica.Debljina","sirina_ojacanja","","0","0","","mt1_008","False","False","","","","","","False","",""," "," "," "," "," "," "," "," "," "," ", 
+"2","A","0","16777215","4","0","0","0","false","false","false","true","mt1_001","O020209361","melamin","0", 
+"2","A","0","16777215","4","0","0","0","false","false","true","false","mt1_001","O020209361","melamin","0", 
+
+"1","D","ojacanje3","8","0","18","200","-1085","1164","80","18","2","0","0","0","0","0"," ","false","true","16777215","false","0","Lijeva Stranica.Debljina+Lijeva Stranica.X","visina_poda","0-prednja.debljina-2*(dubina/4)+ojacanje3.širina/2","Desna Stranica.X-Lijeva Stranica.X-Lijeva Stranica.Debljina","sirina_ojacanja","","0","0","","mt1_008","False","False","","","","","","False","",""," "," "," "," "," "," "," "," "," "," ", 
+"2","A","0","16777215","4","0","0","0","false","false","true","false","mt1_001","O020209361","melamin","0", 
+"2","A","0","16777215","4","0","0","0","false","false","false","true","mt1_001","O020209361","melamin","0", 
+
+"1","D","ojacanje4","8","0","18","200","-1635","1164","80","18","2","0","0","0","0","0"," ","false","true","16777215","false","0","Lijeva Stranica.Debljina+Lijeva Stranica.X","visina_poda","0-prednja.debljina-3*(dubina/4)+ojacanje4.širina/2","Desna Stranica.X-Lijeva Stranica.X-Lijeva Stranica.Debljina","sirina_ojacanja","","0","0","","mt1_008","False","False","","","","","","False","",""," "," "," "," "," "," "," "," "," "," ", 
+"2","A","0","16777215","4","0","0","0","false","false","true","false","mt1_001","O020209361","melamin","0", 
+"2","A","0","16777215","4","0","0","0","false","false","false","true","mt1_001","O020209361","melamin","0", 
+
+"1","D","ojacanje5","8","0","18","200","-2095","1164","80","18","2","0","0","0","0","0"," ","false","true","16777215","false","0","Lijeva Stranica.Debljina+Lijeva Stranica.X","visina_poda","0-dubina+leða.debljina+ojacanje5.širina","Desna Stranica.X-Lijeva Stranica.X-Lijeva Stranica.Debljina","sirina_ojacanja","","0","0","","mt1_008","False","False","","","","","","False","",""," "," "," "," "," "," "," "," "," "," ", 
+"2","A","0","16777215","4","0","0","0","false","false","true","false","mt1_001","O020209361","melamin","0", 
+"2","A","0","16777215","4","0","0","0","false","false","false","true","mt1_001","O020209361","melamin","0", 
+
+"1","D","prednja_noga","8","0","18","0","-50","218","1164","25","1","0","0","0","0","1"," ","false","true","16777215","false","0","lijeva stranica.debljina","0","0-prednja.debljina-prednja_noga.debljina","visina_poda+ojacanje1.debljina","širina-lijeva stranica.debljina-desna stranica.debljina","","0","0","","mt1_008","False","True","","","","","","False","",""," "," "," "," "," "," "," "," "," "," ", 
+"2","A","0","16777215","4","0","0","0","false","false","true","false","mt1_001","O020209361","melamin","0", 
+"2","A","0","16777215","4","0","0","0","false","true","false","false","mt1_001","O020209361","melamin","0", 
+"2","A","0","16777215","4","0","0","0","false","false","false","true","mt1_001","O020209361","melamin","0", 
+"2","A","0","16777215","4","0","0","0","true","false","false","false","mt1_001","O020209361","melamin","0", 
+"2","A","1","16777215","10","93","Obukva7396","Drvene tiple - razne", 
+
+"1","D","prednja_noga_D","8","0","1164","0","-50","200","80","18","0","0","0","0","0","0"," ","false","true","16777215","false","0","širina-2*desna stranica.de","0","0-prednja.debljina-prednja_noga.debljina","visina_poda","sirina_ojacanja","","0","0","","mt1_008","False","True","","","","","","False","",""," "," "," "," "," "," "," "," "," "," ", 
+"2","A","0","16777215","4","0","0","0","true","false","false","false","mt1_001","O020209361","melamin","0", 
+"2","A","0","16777215","4","0","0","0","false","false","false","true","mt1_001","O020209361","melamin","0", 
+
+"1","D","prednja_noga_L","8","0","18","0","-50","200","80","18","0","0","0","0","0","0"," ","false","true","16777215","false","0","lijeva stranica.debljina","0","0-prednja.debljina-prednja_noga.debljina","visina_poda","sirina_ojacanja","","0","0","","mt1_008","False","True","","","","","","False","",""," "," "," "," "," "," "," "," "," "," ", 
+"2","A","0","16777215","4","0","0","0","true","false","false","false","mt1_001","O020209361","melamin","0", 
+"2","A","0","16777215","4","0","0","0","false","false","false","true","mt1_001","O020209361","melamin","0", 
+
+"1","E","rbox","","0","18","236","-2175","2150","200","18","1164","2","true",""," 0","0","0","0","0","0","0","true","false","lijeva stranica.debljina","visina_poda+rez+pod.debljina+ojacanje2.debljina","0-dubina+leða.debljina","dubina-leða.debljina-prednja.debljina","širina-lijeva stranica.debljina-desna stranica.debljina","","A33921","90","0","","","false","0","0","0","0","0","0","1","1","1","false","false","false","false","","","","","","","","","","","", 
+"2","VAR","RVARS=1",rez=25,
+"2","EFC","RVTOKLK=""""""Materijal"""","""""""","""""""","""""""",""""Prema tipu ploha u elementu"""""",""""""Korpus"""",""""kn"""",""""PT_BodySqr"""",""""45.50"""",""""Površina poda, bokova i ojaèanja"""""",""""""Fronte"""",""""kn"""",""""PT_FaceSqr"""",""""60.00"""",""""Površina fronti"""""",""""""Police"""",""""kn"""",""""PT_ShelSqr"""",""""45.50"""",""""Površina polica"""""",""""""Cokl"""",""""kn"""",""""PT_ToekSqr"""",""""45.50"""",""""Površina cokla"""""",""""""Radna_ploca"""",""""kn"""",""""PT_WorkTopSqr"""",""""130.00"""",""""Površina radne ploce"""""",""""""Ledja"""",""""kn"""",""""PT_BackSqr"""",""""30.00"""",""""Površina ledja"""""",""""""Okviri"""",""""kn"""",""""CB_BarLen"""",""""70.00"""",""""Dužina okvira na frontama s ukladama"""""",""""""Custom"""",""""kn"""",""""PT_CustSqr"""",""""120.00"""",""""Površina ploha tipa """"""""Custom"""""""""""""",""""""Usluge"""","""""""","""""""","""""""","""""""""",""""""Obrada_okvira"""",""""kn"""",""""CB_BarQty"""",""""20.00"""",""""Obrada okvira po komadu"""""",""""""Lakiranje_fronti"""",""""kn"""",""""PT_FaceSqr*_Lakiranje"""",""""500.00"""",""""Površina fronti"""""",""""""Bušenje_rupa"""",""""kn"""",""""CB_HoleQty"""",""""2.00"""",""""Broj rupa"""""",""""""Ugradnja_ladica"""",""""kn"""",""""CB_DrawQty"""",""""20.00"""",""""Broj ladica"""""",""""""Montaža"""",""""kn"""",""""_Montaza"""",""""50.00"""",""""Cijena jednog radnog sata""""""","RVARS=B=VISINA,L=ŠIRINA,D=DEBLJINA,_Montaza=1,_Lakiranje=1"
+"2","EEX","EATCAL=1",
+"2","D","ZZ","27","0","25","0","-200","2149","1114","1","1","0","0","0","0","0"," ","true","true","16777215","false","5","0+rez","0","0-dubina","v-doljnja.debljina-gornja.debljina","s-2*rez","","0","0","","mt1_027","False","False","","","","","","False","",""," "," "," "," "," "," "," "," "," "," ", 
+
+"2","D","LL","27","0","0","0","-25","2150","150","1","0","0","0","0","0","0"," ","true","true","16777215","false","0","0","0","0-rez","v","d-2*rez","","0","0","","mt1_027","False","False","","","","","","False","",""," "," "," "," "," "," "," "," "," "," ", 
+
+"2","D","DD","27","0","1164","0","-25","2150","150","1","0","0","0","0","0","0"," ","true","true","16777215","false","0","s-desna.debljina","0","0-rez","v","d-2*rez","","0","0","","mt1_027","False","False","","","","","","False","",""," "," "," "," "," "," "," "," "," "," ", 
+
+"2","D","Doljnja","27","0","0","0","0","1164","200","1","2","0","0","0","0","0"," ","true","true","16777215","false","0","0","0","0","s-lijeva.debljina-desna.debljina","d-prednja.debljina","","0","0","","mt1_027","False","False","","","","","","False","",""," "," "," "," "," "," "," "," "," "," ", 
+"3","P","1","25","0","25","0","300","0","1", 
+"3","P","1","25","0","25","0","300","2","1", 
+"3","P","1","25","0","25","0","300","4","1", 
+"3","P","1","25","0","25","0","300","6","1", 
+"2","D","PP","27","0","25","0","0","2150","1114","1","1","0","0","0","0","0"," ","true","true","16777215","false","0","0+rez","0","0-prednja.debljina","v","s-2*rez","","0","0","","mt1_027","False","False","","","","","","False","",""," "," "," "," "," "," "," "," "," "," ", 
+
+"2","D","PL","27","-45","0","0","-25","2150","35","1","1","0","0","0","0","0"," ","true","true","16777215","false","0","0,5","0","0-rez","v","sqrt(2*sqr(rez))","","0","0","","mt1_027","False","False","","","","","","False","",""," "," "," "," "," "," "," "," "," "," ", 
+
+"2","D","PD","27","45","1139","0","0","2150","35","1","1","0","0","0","0","0"," ","true","true","16777215","false","0","0+rez+pp.s","0","0-prednja.debljina","v","sqrt(2*sqr(rez))","","0","0","","mt1_027","False","False","","","","","","False","",""," "," "," "," "," "," "," "," "," "," ", 
+
+"2","D","ZL","27","45","0","0","-175","2150","35","1","1","0","0","0","0","0"," ","true","true","16777215","false","0","0,5","0","0-dubina+rez","v","sqrt(2*sqr(rez))","","0","0","","mt1_027","False","False","","","","","","False","",""," "," "," "," "," "," "," "," "," "," ", 
+
+"2","D","ZD","27","-45","1139","0","-200","2150","35","1","1","0","0","0","0","0"," ","true","true","16777215","false","0","0+rez+pp.s","0","0-dubina","v","sqrt(2*sqr(rez))","","0","0","","mt1_027","False","False","","","","","","False","",""," "," "," "," "," "," "," "," "," "," ", 
+
+"2","D","Gore","27","0","0","2150","0","1164","200","1","2","0","0","0","0","0"," ","true","true","16777215","false","0","0","visina","0","s-lijeva.debljina-desna.debljina","d-prednja.debljina","","0","0","","mt1_027","False","False","","","","","","False","",""," "," "," "," "," "," "," "," "," "," ", 
+"3","P","1","25","0","25","0","300","0","1", 
+"3","P","1","25","0","25","0","300","2","1", 
+"3","P","1","25","0","25","0","300","4","1", 
+"3","P","1","25","0","25","0","300","6","1", 
