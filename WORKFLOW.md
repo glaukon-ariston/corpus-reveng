@@ -24,3 +24,11 @@ Each development cycle for a new task or feature will follow these steps:
 
 *   `GEMINI.md`: This file will serve as the project's "memory" and will contain project-specific information, such as the current understanding of the S3D format, data structures, and the overall project plan.
 *   `WORKFLOW.md`: This file contains the generic workflow instructions for the project. It should be updated whenever the development process is changed or refined.
+
+## OpenSCAD
+
+To capture the `echo` output from an OpenSCAD script to a file, use the following PowerShell command:
+
+```powershell
+powershell -Command "openscad <input_file.scad> -o 'artifacts/dummy.png' --imgsize='1,1' 2>&1 | Out-File -FilePath 'artifacts/<output_file.echo>' -Encoding utf8"
+```
