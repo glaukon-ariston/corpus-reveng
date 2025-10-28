@@ -17,7 +17,7 @@ def write_s3d(project: Project, file_path: str):
             f.write(f'  <ELEMENT ENAME="{element_data.name}" EXPOX="{element_data.position["X"]}" EYPOS="{element_data.position["Y"]}" EZPOS="{element_data.position["Z"]}" ESIRINA="{element_data.dimensions["Width"]}" EVISINA="{element_data.dimensions["Height"]}" EDUBINA="{element_data.dimensions["Depth"]}">\n')
             f.write('    <DASKE>\n')
             for panel_data in element_data.panels:
-                f.write(f'      <AD DNAME="{panel_data.name}" VISINA="{panel_data.dimensions["Width"]}" DUBINA="{panel_data.dimensions["Height"]}" DEBLJINA="{panel_data.dimensions["Thickness"]}">\n')
+                f.write(f'      <AD DNAME="{panel_data.name}" DXPOS="{panel_data.position["X"]}" DYPOS="{panel_data.position["Y"]}" DZPOS="{panel_data.position["Z"]}" VISINA="{panel_data.dimensions["Width"]}" DUBINA="{panel_data.dimensions["Height"]}" DEBLJINA="{panel_data.dimensions["Thickness"]}">\n')
                 if panel_data.drilling_groups:
                     f.write('        <RUPE>\n')
                     for drilling_group_data in panel_data.drilling_groups:
@@ -39,6 +39,7 @@ if __name__ == '__main__':
             panels=[
                 Panel(
                     name='Test_Panel',
+                    position={'X': '0', 'Y': '0', 'Z': '0'},
                     dimensions={'Width': '800', 'Height': '600', 'Thickness': '18'},
                     drilling_groups=[
                         DrillingGroup(data={

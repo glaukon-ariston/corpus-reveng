@@ -11,6 +11,7 @@ class DrillingGroup:
 @dataclass
 class Panel:
     name: str
+    position: Dict[str, str]
     dimensions: Dict[str, str]
     drilling_groups: List[DrillingGroup] = field(default_factory=list)
 
@@ -70,6 +71,11 @@ def parse_s3d(file_path: str) -> Project:
             for ad_node in daske_node.findall('AD'):
                 panel = Panel(
                     name=ad_node.get('DNAME'),
+                    position={
+                        'X': ad_node.get('DXPOS'),
+                        'Y': ad_node.get('DYPOS'),
+                        'Z': ad_node.get('DZPOS'),
+                    },
                     dimensions={
                         'Width': ad_node.get('VISINA'),
                         'Height': ad_node.get('DUBINA'),
