@@ -67,13 +67,20 @@ def import_from_echo(file_path: str) -> Project:
                 ny = drill['ny']
                 nz = drill['nz']
 
+                abs_nx = abs(nx)
+                abs_ny = abs(ny)
+                abs_nz = abs(nz)
+
                 raspla = '0' # Default
-                if nz == -1: raspla = '1' # Front
-                elif nz == 1: raspla = '2' # Back
-                elif ny == -1: raspla = '3' # Bottom
-                elif ny == 1: raspla = '4' # Top
-                elif nx == -1: raspla = '5' # Left
-                elif nx == 1: raspla = '6' # Right
+                if abs_nx > abs_ny and abs_nx > abs_nz:
+                    if nx > 0: raspla = '6' # Right
+                    else: raspla = '5' # Left
+                elif abs_ny > abs_nx and abs_ny > abs_nz:
+                    if ny > 0: raspla = '4' # Top
+                    else: raspla = '3' # Bottom
+                elif abs_nz > abs_nx and abs_nz > abs_ny:
+                    if nz > 0: raspla = '2' # Back
+                    else: raspla = '1' # Front
                 
                 if raspla == '1' or raspla == '2': # Front or Back
                     rasxpo = rel_x
