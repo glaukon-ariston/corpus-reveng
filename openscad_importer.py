@@ -7,11 +7,10 @@ def import_from_echo(file_path: str) -> Project:
     Imports a project from an OpenSCAD echo file.
     """
     project = Project()
-    # For now, we'll put everything in a single element
     element = Element(
         name="Imported_Element",
         position={'X': '0', 'Y': '0', 'Z': '0'},
-        dimensions={'Width': '0', 'Height': '0', 'Depth': '0'} # These will be calculated later
+        dimensions={'Width': '0', 'Height': '0', 'Depth': '0'}
     )
     project.elements.append(element)
 
@@ -19,13 +18,11 @@ def import_from_echo(file_path: str) -> Project:
         for line in f:
             line = line.strip()
             if line.startswith('ECHO: "PANEL:'):
-                # Extract panel data
                 match = re.search(r'ECHO: "PANEL:(.*)"|', line)
                 if match:
                     panel_data = match.group(1).split(',')
                     name = panel_data[0]
                     w, h, d, x, y, z = [p.strip() for p in panel_data[1:]]
-                    
                     panel = Panel(
                         name=name,
                         position={'X': x, 'Y': y, 'Z': z},
@@ -34,21 +31,14 @@ def import_from_echo(file_path: str) -> Project:
                     element.panels.append(panel)
 
             elif line.startswith('ECHO: "DRILL:'):
-                # Extract drill data
                 match = re.search(r'ECHO: "DRILL:(.*)"|', line)
                 if match:
                     drill_data = match.group(1).split(',')
                     x, y, z, diameter, depth = [p.strip() for p in drill_data]
                     
-                    # Find the panel that this drill hole belongs to.
-                    # This is tricky. For now, I'll assume the drill holes
-                    # are defined immediately after the panel they belong to.
                     if element.panels:
                         panel = element.panels[-1]
                         
-                        # The drill coordinates are absolute, but the S3D format
-                        # expects them to be relative to the panel.
-                        # I need to subtract the panel's position.
                         rel_x = float(x) - float(panel.position['X'])
                         rel_y = float(y) - float(panel.position['Y'])
                         
@@ -56,10 +46,10 @@ def import_from_echo(file_path: str) -> Project:
                             'RASNAM': 'drill',
                             'RASXPO': str(rel_x),
                             'RASYPO': str(rel_y),
-                            'RASPLA': '1', # Assuming face 1 for now
+                            'RASPLA': '1', # Hardcoded for now
                             'RASFI': diameter,
                             'RASDUB': depth,
-                            'RASMODE': '0', # Single hole
+                            'RASMODE': '0',
                             'RASBRR': '1',
                             'RASSVK': '0',
                             'RASANG': '0'
