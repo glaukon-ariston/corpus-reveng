@@ -25,6 +25,11 @@ Each development cycle for a new task or feature will follow these steps:
 *   `GEMINI.md`: This file will serve as the project's "memory" and will contain project-specific information, such as the current understanding of the S3D format, data structures, and the overall project plan.
 *   `WORKFLOW.md`: This file contains the generic workflow instructions for the project. It should be updated whenever the development process is changed or refined.
 
+## Documentation Guidelines
+
+*   When updating `GEMINI.md`, do not delete information from it. Refine it by adding new information, such as learnings and artifacts, while keeping the original plan intact.
+*   The `GEMINI.md` file should contain the original "Project Plan" and after that the "Project Execution", "Learnings", and "Artifacts" sections.
+
 ## OpenSCAD
 
 To capture the `echo` output from an OpenSCAD script to a file, use the following PowerShell command:
