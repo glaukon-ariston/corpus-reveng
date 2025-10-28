@@ -17,11 +17,11 @@ def import_from_echo(file_path: str) -> Project:
     panels = []
     drills = []
 
-    with open(file_path, 'r') as f:
+    with open(file_path, 'r', encoding='utf-8-sig') as f:
         for line in f:
             line = line.strip()
             if line.startswith('ECHO: "PANEL:'):
-                match = re.search(r'ECHO: "PANEL:(.*)"|', line)
+                match = re.search(r'ECHO: "PANEL:(.*)"', line)
                 if match:
                     panel_data = match.group(1).split(',')
                     name = panel_data[0]
@@ -34,13 +34,14 @@ def import_from_echo(file_path: str) -> Project:
                     panels.append(panel)
 
             elif line.startswith('ECHO: "DRILL:'):
-                match = re.search(r'ECHO: "DRILL:(.*)"|', line)
+                match = re.search(r'ECHO: "DRILL:(.*)"', line)
                 if match:
                     drill_data = match.group(1).split(',')
-                    x, y, z, diameter, depth = [p.strip() for p in drill_data]
+                    x, y, z, diameter, depth, nx, ny, nz = [p.strip() for p in drill_data]
                     drills.append({
                         'x': float(x), 'y': float(y), 'z': float(z),
-                        'diameter': diameter, 'depth': depth
+                        'diameter': diameter, 'depth': depth,
+                        'nx': float(nx), 'ny': float(ny), 'nz': float(nz)
                     })
 
     # Associate drills with panels
@@ -62,20 +63,17 @@ def import_from_echo(file_path: str) -> Project:
                 rel_y = drill['y'] - py
                 rel_z = drill['z'] - pz
 
-                distances = {
-                    '1': abs(rel_z), # Front
-                    '2': abs(rel_z - pd), # Back
-                    '3': abs(rel_y), # Bottom
-                    '4': abs(rel_y - ph), # Top
-                    '5': abs(rel_x), # Left
-                    '6': abs(rel_x - pw)  # Right
-                }
-                
-                raspla = min(distances, key=distances.get)
-                
-                # The coordinates need to be on the face plane.
-                # For example, if the drill is on the front face (RASPLA=1),
-                # the coordinates are in the XY plane.
+                nx = drill['nx']
+                ny = drill['ny']
+                nz = drill['nz']
+
+                raspla = '0' # Default
+                if nz == -1: raspla = '1' # Front
+                elif nz == 1: raspla = '2' # Back
+                elif ny == -1: raspla = '3' # Bottom
+                elif ny == 1: raspla = '4' # Top
+                elif nx == -1: raspla = '5' # Left
+                elif nx == 1: raspla = '6' # Right
                 
                 if raspla == '1' or raspla == '2': # Front or Back
                     rasxpo = rel_x
@@ -103,7 +101,7 @@ def import_from_echo(file_path: str) -> Project:
                     'RASANG': '0'
                 })
                 panel.drilling_groups.append(drilling_group)
-                break # Move to the next drill
+                break
 
     element.panels = panels
     
@@ -137,6 +135,6 @@ def import_from_echo(file_path: str) -> Project:
     return project
 
 if __name__ == '__main__':
-    project = import_from_echo('sample2.echo')
+    project = import_from_echo('artifacts/dummy.echo')
     write_s3d(project, 'imported_from_openscad2.s3d')
     print("Generated imported_from_openscad2.s3d")
