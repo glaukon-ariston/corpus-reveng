@@ -14,6 +14,9 @@ def import_from_echo(file_path: str) -> Project:
     )
     project.elements.append(element)
 
+    panels = []
+    drills = []
+
     with open(file_path, 'r') as f:
         for line in f:
             line = line.strip()
@@ -28,34 +31,82 @@ def import_from_echo(file_path: str) -> Project:
                         position={'X': x, 'Y': y, 'Z': z},
                         dimensions={'Width': w, 'Height': h, 'Thickness': d},
                     )
-                    element.panels.append(panel)
+                    panels.append(panel)
 
             elif line.startswith('ECHO: "DRILL:'):
                 match = re.search(r'ECHO: "DRILL:(.*)"|', line)
                 if match:
                     drill_data = match.group(1).split(',')
                     x, y, z, diameter, depth = [p.strip() for p in drill_data]
-                    
-                    if element.panels:
-                        panel = element.panels[-1]
-                        
-                        rel_x = float(x) - float(panel.position['X'])
-                        rel_y = float(y) - float(panel.position['Y'])
-                        
-                        drilling_group = DrillingGroup(data={
-                            'RASNAM': 'drill',
-                            'RASXPO': str(rel_x),
-                            'RASYPO': str(rel_y),
-                            'RASPLA': '1', # Hardcoded for now
-                            'RASFI': diameter,
-                            'RASDUB': depth,
-                            'RASMODE': '0',
-                            'RASBRR': '1',
-                            'RASSVK': '0',
-                            'RASANG': '0'
-                        })
-                        panel.drilling_groups.append(drilling_group)
+                    drills.append({
+                        'x': float(x), 'y': float(y), 'z': float(z),
+                        'diameter': diameter, 'depth': depth
+                    })
 
+    # Associate drills with panels
+    for drill in drills:
+        for panel in panels:
+            px = float(panel.position['X'])
+            py = float(panel.position['Y'])
+            pz = float(panel.position['Z'])
+            pw = float(panel.dimensions['Width'])
+            ph = float(panel.dimensions['Height'])
+            pd = float(panel.dimensions['Thickness'])
+
+            # Check if the drill is inside the panel
+            if (px <= drill['x'] <= px + pw) and \
+               (py <= drill['y'] <= py + ph) and \
+               (pz <= drill['z'] <= pz + pd):
+                
+                rel_x = drill['x'] - px
+                rel_y = drill['y'] - py
+                rel_z = drill['z'] - pz
+
+                distances = {
+                    '1': abs(rel_z), # Front
+                    '2': abs(rel_z - pd), # Back
+                    '3': abs(rel_y), # Bottom
+                    '4': abs(rel_y - ph), # Top
+                    '5': abs(rel_x), # Left
+                    '6': abs(rel_x - pw)  # Right
+                }
+                
+                raspla = min(distances, key=distances.get)
+                
+                # The coordinates need to be on the face plane.
+                # For example, if the drill is on the front face (RASPLA=1),
+                # the coordinates are in the XY plane.
+                
+                if raspla == '1' or raspla == '2': # Front or Back
+                    rasxpo = rel_x
+                    rasypo = rel_y
+                elif raspla == '3' or raspla == '4': # Bottom or Top
+                    rasxpo = rel_x
+                    rasypo = rel_z
+                elif raspla == '5' or raspla == '6': # Left or Right
+                    rasxpo = rel_y
+                    rasypo = rel_z
+                else:
+                    rasxpo = rel_x
+                    rasypo = rel_y
+
+                drilling_group = DrillingGroup(data={
+                    'RASNAM': 'drill',
+                    'RASXPO': str(rasxpo),
+                    'RASYPO': str(rasypo),
+                    'RASPLA': raspla,
+                    'RASFI': drill['diameter'],
+                    'RASDUB': drill['depth'],
+                    'RASMODE': '0',
+                    'RASBRR': '1',
+                    'RASSVK': '0',
+                    'RASANG': '0'
+                })
+                panel.drilling_groups.append(drilling_group)
+                break # Move to the next drill
+
+    element.panels = panels
+    
     # Calculate element dimensions
     min_x, max_x = 0, 0
     min_y, max_y = 0, 0
@@ -86,6 +137,6 @@ def import_from_echo(file_path: str) -> Project:
     return project
 
 if __name__ == '__main__':
-    project = import_from_echo('sample.echo')
-    write_s3d(project, 'imported_from_openscad.s3d')
-    print("Generated imported_from_openscad.s3d")
+    project = import_from_echo('sample2.echo')
+    write_s3d(project, 'imported_from_openscad2.s3d')
+    print("Generated imported_from_openscad2.s3d")
