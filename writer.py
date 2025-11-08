@@ -17,7 +17,9 @@ def write_s3d(project: Project, file_path: str):
             f.write(f'  <ELEMENT ENAME="{element_data.name}" EXPOX="{element_data.position["X"]}" EYPOS="{element_data.position["Y"]}" EZPOS="{element_data.position["Z"]}" ESIRINA="{element_data.dimensions["Width"]}" EVISINA="{element_data.dimensions["Height"]}" EDUBINA="{element_data.dimensions["Depth"]}">\n')
             f.write('    <DASKE>\n')
             for panel_data in element_data.panels:
-                f.write(f'      <AD DNAME="{panel_data.name}" DXPOS="{panel_data.position["X"]}" DYPOS="{panel_data.position["Y"]}" DZPOS="{panel_data.position["Z"]}" VISINA="{panel_data.dimensions["Width"]}" DUBINA="{panel_data.dimensions["Height"]}" DEBLJINA="{panel_data.dimensions["Thickness"]}">\n')
+                material_attr = f' DMAT="{panel_data.material}"' if panel_data.material else ''
+                banding_attr = f' DMATS="{",".join(panel_data.banding)}"' if panel_data.banding else ''
+                f.write(f'      <AD DNAME="{panel_data.name}" DXPOS="{panel_data.position["X"]}" DYPOS="{panel_data.position["Y"]}" DZPOS="{panel_data.position["Z"]}" VISINA="{panel_data.dimensions["Width"]}" DUBINA="{panel_data.dimensions["Height"]}" DEBLJINA="{panel_data.dimensions["Thickness"]}"{material_attr}{banding_attr}>\n')
                 if panel_data.drilling_groups:
                     f.write('        <RUPE>\n')
                     for drilling_group_data in panel_data.drilling_groups:

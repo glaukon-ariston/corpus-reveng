@@ -160,6 +160,21 @@ For groups of holes (`RASMODE=0`), the following additional keys are used:
 *   `RASRUDU`: The depth of the holes in the group.
 *   `RASRUNX`, `RASRUNY`: The relative X and Y coordinates of each hole in the group.
 
+## Material and Banding
+
+The material and banding information is stored as attributes of the `<AD>` tag, which represents a panel.
+
+*   `DMAT`: The material name for the panel itself (e.g., `EGGER_ELGRAD_RP_H1145_ST10`).
+*   `DMATS`: The material name for the edge banding. This attribute contains a comma-separated list of four values, corresponding to the four edges of the panel. An empty string indicates that no banding is applied to that edge. For example, `DMATS=",EGGER_ELGRAD_ABS_U999_ST2,"` means that the second edge has banding, and the other three do not.
+
+Example of an `<AD>` tag with material definition:
+
+```xml
+<AD DNAME="Panel1" VISINA="1000" DUBINA="500" DEBLJINA="18" DMAT="EGGER_ELGRAD_RP_H1145_ST10" DMATS=",EGGER_ELGRAD_ABS_U999_ST2,," ...>
+    <!-- other panel data -->
+</AD>
+```
+
 ## SELBOX Data Format
 
 The `SELBOX` data appears to be a list of 4-byte identifiers. The first byte of each identifier seems to be an ASCII character, and the rest of the bytes are null. The data starts with a header that contains the string "TselectionBox".

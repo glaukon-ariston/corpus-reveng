@@ -25,11 +25,16 @@ def import_from_echo(file_path: str) -> Project:
                 if match:
                     panel_data = match.group(1).split(',')
                     name = panel_data[0]
-                    w, h, d, x, y, z = [p.strip() for p in panel_data[1:]]
+                    w, h, d, x, y, z = [p.strip() for p in panel_data[1:7]]
+                    material = panel_data[7].strip() if len(panel_data) > 7 else ""
+                    banding = [p.strip() for p in panel_data[8:12]] if len(panel_data) > 11 else ["", "", "", ""]
+
                     panel = Panel(
                         name=name,
                         position={'X': x, 'Y': y, 'Z': z},
                         dimensions={'Width': w, 'Height': h, 'Thickness': d},
+                        material=material,
+                        banding=banding
                     )
                     panels.append(panel)
 

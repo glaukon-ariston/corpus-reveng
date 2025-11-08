@@ -23,6 +23,8 @@ class Panel:
     name: str
     position: Dict[str, str]
     dimensions: Dict[str, str]
+    material: str = ""
+    banding: List[str] = field(default_factory=list)
     drilling_groups: List[DrillingGroup] = field(default_factory=list)
     curves: List[Curve] = field(default_factory=list)
 
@@ -122,7 +124,9 @@ def _parse_element(element_node: ET.Element) -> Element:
                     'Width': ad_node.get('VISINA'),
                     'Height': ad_node.get('DUBINA'),
                     'Thickness': ad_node.get('DEBLJINA'),
-                }
+                },
+                material=ad_node.get('DMAT', ''),
+                banding=[s.strip() for s in ad_node.get('DMATS', '').split(',')]
             )
 
             rupe_node = ad_node.find('RUPE')
