@@ -2,14 +2,17 @@
     Sample OpenSCAD script for a simple cabinet with drilling information.
 */
 
+// Transparency
+part_alpha = 0.4;
+
 // Define a list of colors for the panels
 colors = [
-    "LightBlue",
-    "LightGreen",
-    "LightCoral",
-    "LightSalmon",
-    "LightSteelBlue",
-    "Khaki"
+    [0.68, 0.85, 0.90], // LightBlue
+    [0.56, 0.93, 0.56], // LightGreen
+    [0.94, 0.50, 0.50], // LightCoral
+    [1.00, 0.63, 0.48], // LightSalmon
+    [0.69, 0.77, 0.87], // LightSteelBlue
+    [0.94, 0.90, 0.55]  // Khaki
 ];
 
 // Define the dimensions of the cabinet
@@ -20,7 +23,7 @@ thickness = 18;
 
 // Module to create a panel
 module panel(name, x, y, z, w, h, d, color_index) {
-    color(colors[color_index]) {
+    color(concat(colors[color_index], [part_alpha])) {
         translate([x, y, z])
         cube([w, h, d]);
     }
