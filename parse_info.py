@@ -1,0 +1,46 @@
+import binascii
+
+def parse_selbox_data(data, output_file=None):
+    """
+    Parses the hexadecimal data from the SELBOX tags.
+    """
+    with open(output_file, 'w', encoding='utf-8') if output_file else open(os.devnull, 'w') as f:
+        i = 0
+
+        # Read header
+        header_len = data[1]
+        header = data[2:2+header_len].decode('latin-1')
+        f.write(f"Header: {header}\n")
+        i = 2 + header_len
+
+        # Skip the next 6 bytes, which seem to be constant
+        i += 6
+
+        # Read the rest of the data in 4-byte chunks
+        while i < len(data):
+            chunk = data[i:i+4]
+            if len(chunk) == 4:
+                hex_val = chunk.hex()
+                ascii_char = chr(chunk[0]) if 32 <= chunk[0] <= 126 else '.'
+                f.write(f"  Chunk: {hex_val}, First byte: {ascii_char}\n")
+            i += 4
+
+if __name__ == '__main__':
+    hex_data = "070D5473656C656374696F6E426F780102000602555103650D0603707473000000000000000000000000000000000000000000660D0000670D0000680D0000690D00006A0D00006B0D00006C0D00006D0D00006E0D00006F0D0000700D0000710D0000720D0000730D0000740D0000750D0000760D0000770D0000780D0000790D00007A0D000000"
+    data = binascii.unhexlify(hex_data)
+    parse_selbox_data(data, output_file='parsed_danira.txt')
+    print("Parsed data saved to parsed_danira.txt")
+
+if __name__ == '__main__':
+
+    hex_data = "070D5473656C656374696F6E426F780102000602555103650D0603707473000000000000000000000000000000000000000000660D0000670D0000680D0000690D00006A0D00006B0D00006C0D00006D0D00006E0D00006F0D0000700D0000710D0000720D0000730D0000740D0000750D0000760D0000770D0000780D0000790D00007A0D000000"
+
+    data = binascii.unhexlify(hex_data)
+
+    parse_selbox_data(data, output_file='parsed_danira.txt')
+
+    print("Parsed data saved to parsed_danira.txt")
+
+
+
+
