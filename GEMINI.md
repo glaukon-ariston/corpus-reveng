@@ -106,6 +106,17 @@ The XML structure is hierarchical, with the following key tags:
 
 The presence of the `<RUPE>` and `<GRUPA>` tags confirms that drilling information is stored directly in the file, and the data format within the `DATA` attribute appears to be a custom, delimited format.
 
+## Detailed S3D File Analysis
+
+A more detailed analysis of the `DANIRA.S3D` file has revealed several new tags and attributes that were not present in the initial analysis. These new findings are crucial for a more complete understanding of the S3D format.
+
+*   **`<INFO>` and `<SELBOX>` tags:** These tags contain what appears to be hexadecimal encoded data. The purpose of this data is currently unknown and requires further investigation.
+*   **`<ELMLIST>` and nested `<ELM>` tags:** The `DANIRA.S3D` file shows a nested structure of `<ELM>` tags within an `<ELMLIST>`. This suggests a hierarchical relationship between elements, which is not fully captured in the current `parser.py`.
+*   **`<POTROSNI>` tag:** This tag, which translates to "consumables," is present and contains `<POTITEM>` tags. This confirms the "Initial Findings from Documentation" section in `GEMINI.md`.
+*   **`<KRIVULJE>` tag:** This tag, for "curves," is used extensively. The `DATA` attribute for this tag is also a complex, comma-delimited format, similar to the drilling data. This is a significant area for further investigation, as it's likely used to define custom panel shapes.
+*   **`<SPOJ>` and `<ELINKS>` tags:** These tags, meaning "joint" and "e-links" respectively, suggest a mechanism for defining relationships and connections between elements. The `<SPOJ>` tag contains `<M1>` and `<M2>` tags with `MSVA`, `MSFO`, `MSRA`, `MSPO`, and `MSMA` attributes, which seem to define the connection parameters.
+*   **Formulas in attributes:** Many attributes, especially those related to position and dimensions (e.g., `XF`, `YF`, `ZF`, `HF`, `SF`, `DF`), contain formulas and references to other elements (e.g., `Š-Desna.Š`, `Visina-Gornja.Visina`). This is a powerful feature of the S3D format that allows for parametric design. The current parser and data model do not seem to handle this.
+
 ## Drilling Data Format
 
 The drilling information is stored in the `DATA` attribute of the `<GRUPA>` tag within the `<RUPE>` section. The `DATA` attribute is a string of key-value pairs, separated by commas. The values are either numeric or strings enclosed in double quotes. The following are some of the key-value pairs that have been identified:
@@ -135,6 +146,10 @@ For groups of holes (`RASMODE=0`), the following additional keys are used:
 *   `RASRUDU`: The depth of the holes in the group.
 *   `RASRUNX`, `RASRUNY`: The relative X and Y coordinates of each hole in the group.
 
+## SELBOX Data Format
+
+The `SELBOX` data appears to be a list of 4-byte identifiers. The first byte of each identifier seems to be an ASCII character, and the rest of the bytes are null. The data starts with a header that contains the string "TselectionBox".
+
 ## Next Steps
 
 The current implementation provides a solid foundation for the project. The following are potential next steps for improving the converter:
@@ -143,3 +158,5 @@ The current implementation provides a solid foundation for the project. The foll
 *   **Support for More Complex Drilling Patterns:** The current implementation only supports single drill holes (`RASMODE=0`). The S3D format also supports line drills (`RASMODE=1`) and saw cuts (`RASMODE=3`).
 *   **User Interface:** A more user-friendly interface (e.g., a graphical user interface) could be developed to make the converter easier to use.
 *   **Error Handling and Validation:** Add more robust error handling and validation to the entire pipeline.
+*   **Create an advanced parser for SELBOX data:** Create a more advanced parser for the `SELBOX` data to extract the list of identifiers and their meaning.
+*   **Investigate INFO data:** Continue the investigation of the `INFO` data to understand its structure and meaning.
