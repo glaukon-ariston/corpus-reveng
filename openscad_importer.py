@@ -33,8 +33,9 @@ def import_from_echo(file_path: str) -> Project:
                         name=name,
                         position={'X': x, 'Y': y, 'Z': z},
                         dimensions={'Width': w, 'Height': h, 'Thickness': d},
-                        material=material,
-                        banding=banding
+                        mat_name=panel_data[7].strip() if len(panel_data) > 7 else "",
+                        mat_uid=panel_data[8].strip() if len(panel_data) > 8 else "",
+                        mat_folder=panel_data[9].strip() if len(panel_data) > 9 else ""
                     )
                     panels.append(panel)
 
