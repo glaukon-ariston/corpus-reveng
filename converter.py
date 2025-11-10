@@ -23,6 +23,8 @@ def convert(input_file, output_file):
     """
     tmp_dir = "tmp"
     os.makedirs(tmp_dir, exist_ok=True)
+    artifacts_dir = "artifacts"
+    os.makedirs(artifacts_dir, exist_ok=True)
 
     file_ext = os.path.splitext(input_file)[1]
 
@@ -38,8 +40,9 @@ def convert(input_file, output_file):
     print(f"Importing from {input_file}...")
     project = import_from_echo(input_file)
 
-    print(f"Writing to {output_file}...")
-    write_s3d(project, output_file)
+    output_path = os.path.join(artifacts_dir, output_file)
+    print(f"Writing to {output_path}...")
+    write_s3d(project, output_path)
 
     print("Conversion complete.")
 

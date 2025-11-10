@@ -162,6 +162,10 @@ def import_from_echo(file_path: str) -> Project:
     return project
 
 if __name__ == '__main__':
+    import os
+    artifacts_dir = "artifacts"
+    os.makedirs(artifacts_dir, exist_ok=True)
     project = import_from_echo('tmp/dummy.echo')
-    write_s3d(project, 'imported_from_openscad2.s3d')
-    print("Generated imported_from_openscad2.s3d")
+    output_path = os.path.join(artifacts_dir, 'imported_from_openscad2.s3d')
+    write_s3d(project, output_path)
+    print(f"Generated {output_path}")

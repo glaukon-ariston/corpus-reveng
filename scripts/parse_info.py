@@ -43,7 +43,10 @@ def parse_selbox_data(data, output_file=None):
             i += 4
 
 if __name__ == '__main__':
+    artifacts_dir = "artifacts"
+    os.makedirs(artifacts_dir, exist_ok=True)
     hex_data = "070D5473656C656374696F6E426F780102000602555103650D0603707473000000000000000000000000000000000000000000660D0000670D0000680D0000690D00006A0D00006B0D00006C0D00006D0D00006E0D00006F0D0000700D0000710D0000720D0000730D0000740D0000750D0000760D0000770D0000780D0000790D00007A0D000000"
     data = binascii.unhexlify(hex_data)
-    parse_selbox_data(data, output_file='parsed_danira.txt')
-    print("Parsed data saved to parsed_danira.txt")
+    output_path = os.path.join(artifacts_dir, 'parsed_danira.txt')
+    parse_selbox_data(data, output_file=output_path)
+    print(f"Parsed data saved to {output_path}")

@@ -45,6 +45,7 @@ def write_s3d(project: Project, file_path: str):
         f.write('</PROJECTFILE>\n')
 
 if __name__ == '__main__':
+    import os
     # Create a sample project
     project = Project(elements=[
         Element(
@@ -75,5 +76,8 @@ if __name__ == '__main__':
         )
     ])
 
-    write_s3d(project, 'test_output.s3d')
-    print("Generated test_output.s3d")
+    artifacts_dir = "artifacts"
+    os.makedirs(artifacts_dir, exist_ok=True)
+    output_path = os.path.join(artifacts_dir, 'test_output.s3d')
+    write_s3d(project, output_path)
+    print(f"Generated {output_path}")
