@@ -1,3 +1,17 @@
+"""
+This script decodes a hexadecimal string into a readable format.
+
+It first converts the hexadecimal string to raw bytes and then attempts to decode
+it using several common encodings (utf-8, latin-1, cp1252). This is useful for
+reverse engineering the S3D file format, particularly for understanding the
+content of tags like <INFO> and <SELBOX>.
+
+Usage:
+    python decode_hex.py
+
+The script uses a hardcoded hexadecimal string from a sample S3D file and prints
+the raw bytes and the decoded string to the console.
+"""
 import binascii
 
 def decode_hex_string(hex_string):

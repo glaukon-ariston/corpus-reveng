@@ -1,4 +1,18 @@
+"""
+This script parses the DATA attribute of <KRIVULJE> tags in S3D files.
 
+The DATA attribute contains a comma-delimited string with key-value pairs
+that define the points of a curve. This script extracts the 'PTX' and 'PTZ'
+coordinates for each 'PTOCKA' (point) and returns a list of points.
+
+This script is intended for reverse engineering the S3D file format.
+
+Usage:
+    python parse_krivulje.py
+
+The script uses a hardcoded data string from a sample S3D file and prints
+the extracted points to the console.
+"""
 import re
 
 def parse_krivulje_data(data_string):

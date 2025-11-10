@@ -1,3 +1,18 @@
+"""
+This script parses the hexadecimal data from the SELBOX tags in S3D files.
+
+It decodes the hexadecimal string, verifies the 'TselectionBox' header, and then
+extracts a list of single-character identifiers from the data. The script assumes
+that the identifiers are the first byte of each 4-byte chunk after the header.
+
+This script is intended for reverse engineering the S3D file format.
+
+Usage:
+    python parse_selbox.py
+
+The script uses a hardcoded hexadecimal string from a sample S3D file and prints
+the extracted identifiers to the console.
+"""
 import binascii
 
 def parse_selbox_data(hex_string):

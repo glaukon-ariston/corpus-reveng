@@ -31,6 +31,7 @@ Each development cycle for a new task or feature will follow these steps:
 *   When updating `GEMINI.md`, do not delete information from it. Refine it by adding new information, such as learnings and artifacts, while keeping the original plan intact.
 *   The `GEMINI.md` file should contain the original "Project Plan" and after that the "Project Execution", "Learnings", and "Artifacts" sections.
 *   For each entity from the S3D specification make sure you provide a real life example.
+*   When creating a script, add a detailed description to the top of the file.
 
 ## OpenSCAD
 

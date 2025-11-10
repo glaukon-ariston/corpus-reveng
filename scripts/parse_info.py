@@ -1,4 +1,21 @@
+
+"""
+This script parses the hexadecimal data from the INFO and SELBOX tags in S3D files.
+
+It decodes the hexadecimal string into bytes and then interprets the data structure.
+The script identifies a header and then reads the rest of the data in 4-byte chunks,
+displaying the hexadecimal value and the ASCII representation of the first byte of each chunk.
+
+This script is intended for reverse engineering the S3D file format.
+
+Usage:
+    python parse_info.py
+
+The script uses a hardcoded hexadecimal string from a sample S3D file and writes the
+parsed data to 'parsed_danira.txt'.
+"""
 import binascii
+import os
 
 def parse_selbox_data(data, output_file=None):
     """
@@ -30,17 +47,3 @@ if __name__ == '__main__':
     data = binascii.unhexlify(hex_data)
     parse_selbox_data(data, output_file='parsed_danira.txt')
     print("Parsed data saved to parsed_danira.txt")
-
-if __name__ == '__main__':
-
-    hex_data = "070D5473656C656374696F6E426F780102000602555103650D0603707473000000000000000000000000000000000000000000660D0000670D0000680D0000690D00006A0D00006B0D00006C0D00006D0D00006E0D00006F0D0000700D0000710D0000720D0000730D0000740D0000750D0000760D0000770D0000780D0000790D00007A0D000000"
-
-    data = binascii.unhexlify(hex_data)
-
-    parse_selbox_data(data, output_file='parsed_danira.txt')
-
-    print("Parsed data saved to parsed_danira.txt")
-
-
-
-
