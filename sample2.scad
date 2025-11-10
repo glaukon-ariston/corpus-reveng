@@ -30,6 +30,15 @@ module panel(name, x, y, z, w, h, d, color_index, material, banding_front="", ba
     echo(str("PANEL:", name, ",", w, ",", h, ",", d, ",", x, ",", y, ",", z, ",", material, ",", banding_front, ",", banding_back, ",", banding_left, ",", banding_right));
 }
 
+// Module to create a drill hole
+module drill_hole(x, y, z, diameter, depth, normal) {
+    color("red") {
+        translate([x, y, z])
+        cylinder(h = depth, d = diameter, $fn = 20);
+    }
+    echo(str("DRILL:", x, ",", y, ",", z, ",", diameter, ",", depth, ",", normal[0], ",", normal[1], ",", normal[2]));
+}
+
 // Create the cabinet
 // Left panel
 panel("Left", 0, 0, 0, thickness, height, depth, 0, "EGGER_ELGRAD_RP_F486_ST76", "EGGER_ELGRAD_ABS_U999_ST2", "", "", "");

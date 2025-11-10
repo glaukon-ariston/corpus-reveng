@@ -162,15 +162,17 @@ For groups of holes (`RASMODE=0`), the following additional keys are used:
 
 ## Material and Banding
 
-The material and banding information is stored as attributes of the `<AD>` tag, which represents a panel.
+Based on the analysis of the `DANIRA.S3D` file, the material and banding information is stored as attributes of the `<AD>` tag for panels and in `<POTROSNI>` and `<DEFTRITEM>` tags for banding.
 
-*   `DMAT`: The material name for the panel itself (e.g., `EGGER_ELGRAD_RP_H1145_ST10`).
-*   `DMATS`: The material name for the edge banding. This attribute contains a comma-separated list of four values, corresponding to the four edges of the panel. An empty string indicates that no banding is applied to that edge. For example, `DMATS=",EGGER_ELGRAD_ABS_U999_ST2,"` means that the second edge has banding, and the other three do not.
+*   `MATNAME`: The material name for the panel itself (e.g., `bmetal`).
+*   `MATUID`: A unique identifier for the material (e.g., `bmetal`).
+*   `MATFOLDER`: The folder where the material is located.
+*   `MATN`: The material name for the edge banding, found in `<POTITEM>` and `<DEFTRITEM>` tags.
 
 Example of an `<AD>` tag with material definition:
 
 ```xml
-<AD DNAME="Panel1" VISINA="1000" DUBINA="500" DEBLJINA="18" DMAT="EGGER_ELGRAD_RP_H1145_ST10" DMATS=",EGGER_ELGRAD_ABS_U999_ST2,," ...>
+<AD DNAME="PROFIL_IZREZA" ROTGOD="false" DKUT="0" DXPOS="0" DYPOS="0" DZPOS="0" VISINA="122" DUBINA="122" DEBLJINA="0" SMJER="0" TIPDASKE="0" FIXTEX="true" VISIBLE="true" BOJA="10066329" PROZIRNO="false" TIPFRONTE="0" XF="" YF="" ZF="" HF="visina" SF="dubina" DF="" XKUT="0" ZKUT="0" TEXIND="3394" MATFOLDER="" MATNAME="bmetal" MATUID="bmetal" IGNOREGOD="false" PRIMJEDBA="" PROGRAM="" KXF="" KYF="" KZF="" ARTIKL="false" DSIFRA="%NE%" PROGRAM1="" PRIMJEDBALIST="" PRDEBLJINA="0" INHFR="false" RUNKOLICINA="0" EIDVR="0" PROIZVODISE="0" DANCH="7">
     <!-- other panel data -->
 </AD>
 ```
@@ -189,3 +191,60 @@ The current implementation provides a solid foundation for the project. The foll
 *   **Error Handling and Validation:** Add more robust error handling and validation to the entire pipeline.
 *   **Create an advanced parser for SELBOX data:** Create a more advanced parser for the `SELBOX` data to extract the list of identifiers and their meaning.
 *   **Investigate INFO data:** Continue the investigation of the `INFO` data to understand its structure and meaning.
+
+## Material Extraction from DANIRA.S3D
+
+Based on the updated `extract_materials.py` script, the following materials were extracted from `DANIRA.S3D`:
+
+### Panel Materials:
+*   1116008
+*   25 RI
+*   309AE4967AB145D8A36F7E3466C23C5D
+*   74F52230C5F0472FB070B57A0899ED0F
+*   8A09287FD7B140B69E66654C5A59BE31
+*   A07309588D7443B8B658D568B70E3CDF
+*   B_siva
+*   C_AL_N_10_bl
+*   E17E7370951F4970B92526BF4118FBC6
+*   EGGER_ELGRAD_RP_F486_ST76
+*   EGGER_ELGRAD_RP_H1180_ST37
+*   F-0085-SG
+*   F-0615
+*   MDF GRUND
+*   ZP_b70
+*   aeg 01
+*   ametal
+*   bmetal
+*   cmetal
+*   lesonit bijeli
+*   mt1_001
+*   mt1_004
+*   pink_07
+*   pla_07
+*   pms_716
+*   ral_7035_mat
+*   sep1
+
+### Banding Materials:
+*   1116008
+*   11162028
+*   2299292
+*   309AE4967AB145D8A36F7E3466C23C5D
+*   42421247814F4154905078628B121264
+*   8A09287FD7B140B69E6654C5A59BE31
+*   A07309588D7443B8B658D568B70E3CDF
+*   C_AL_N_10_bl
+*   C_WH_G_10_sch
+*   E17E7370951F4970B92526BF4118FBC6
+*   EGGER_ELGRAD_IV_U788_ST9
+*   EGGER_ELGRAD_IV_W908_ST2
+*   EGGER_ELGRAD_RP_F486_ST76
+*   EGGER_ELGRAD_RP_H1180_ST37
+*   F-0085-SG
+*   F-0615
+*   MDF GRUND
+*   SP_AZIMUT_S022
+*   W908_SM
+*   W980_ST2
+*   _0
+*   pink_07
