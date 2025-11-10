@@ -39,3 +39,7 @@ To capture the `echo` output from an OpenSCAD script to a file, use the followin
 ```powershell
 powershell -Command "openscad <input_file.scad> -o 'artifacts/dummy.png' --imgsize='1,1' 2>&1 | Out-File -FilePath 'artifacts/<output_file.echo>' -Encoding utf8"
 ```
+
+## Scripts
+
+The `scripts` folder should be used for creating temporary and possibly reusable tools (e.g., Python scripts) that are not part of the main application but help with the development process.
