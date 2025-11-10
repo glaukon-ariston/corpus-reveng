@@ -1,3 +1,15 @@
+"""
+This script takes a Project object and writes it to an S3D XML file.
+
+The Project object is an in-memory representation of an S3D project, and this
+script formats the data from the Project object into the correct XML structure,
+including elements, panels, and drilling information.
+
+This script is the core component for generating S3D files.
+
+When run directly, it creates a sample S3D file ('test_output.s3d') with a
+test element and panel.
+"""
 from parser import Project, Element, Panel, DrillingGroup
 
 def _format_data_string(data: dict) -> str:

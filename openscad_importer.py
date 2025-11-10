@@ -1,3 +1,17 @@
+"""
+This script imports data from an OpenSCAD echo file and creates a Project object.
+
+The echo file contains panel and drill information, which is parsed by this script.
+It processes 'PANEL' and 'DRILL' lines, associates drills with their respective
+panels based on their coordinates, and calculates the overall dimensions of the
+imported element.
+
+This script is a key part of the OpenSCAD to S3D conversion pipeline.
+
+The expected format for the echo file is:
+ECHO: "PANEL:name,w,h,d,x,y,z,mat_name,mat_uid,mat_folder"
+ECHO: "DRILL:x,y,z,diameter,depth,nx,ny,nz"
+"""
 from parser import Project, Element, Panel, DrillingGroup
 from writer import write_s3d
 import re

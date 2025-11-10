@@ -1,3 +1,16 @@
+"""
+This script defines the data classes that represent the structure of an S3D file
+and provides functions to parse the S3D XML file into these data classes.
+
+The data classes (Project, Element, Panel, etc.) create a structured in-memory
+representation of the S3D project. The parsing functions handle the nested
+structure of elements, panels, drills, and curves within the S3D file.
+
+This script is the core component for reading and interpreting S3D files.
+
+When run directly, it parses a sample S3D file ('export/DANIRA.S3D') and prints
+the extracted curve data for each panel.
+"""
 import xml.etree.ElementTree as ET
 import re
 from dataclasses import dataclass, field

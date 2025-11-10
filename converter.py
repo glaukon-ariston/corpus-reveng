@@ -1,3 +1,16 @@
+"""
+This script converts an OpenSCAD file to an S3D file.
+
+It orchestrates the conversion process by:
+1. Running OpenSCAD to generate an echo file containing panel and drill information.
+2. Importing the data from the echo file to create a Project object.
+3. Writing the Project object to an S3D file.
+
+The script uses a temporary 'tmp' folder for intermediate files.
+
+Usage:
+    python converter.py <input_file.scad> <output_file.s3d>
+"""
 import argparse
 import os
 import subprocess
