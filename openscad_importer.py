@@ -148,6 +148,6 @@ def import_from_echo(file_path: str) -> Project:
     return project
 
 if __name__ == '__main__':
-    project = import_from_echo('artifacts/dummy.echo')
+    project = import_from_echo('tmp/dummy.echo')
     write_s3d(project, 'imported_from_openscad2.s3d')
     print("Generated imported_from_openscad2.s3d")
